@@ -95,3 +95,54 @@
     width: 100%;
   }
 }
+
+
+
+/* Island card */
+.island {
+    display: block;
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: 0.25s;
+}
+
+.island img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Popup (hidden by default) */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.popup:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    display: block;
+    margin-top: 15px;
+}
+
