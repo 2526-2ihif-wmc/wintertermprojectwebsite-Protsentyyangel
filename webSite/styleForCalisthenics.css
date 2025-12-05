@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f0f0f0;
+}
+
+/* navbar */
+.navbar {
+    background-color: #667eea;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    float: left;
+}
+
+.navbar a:hover {
+    background-color: #5568d3;
+}
+
+/* dropdown menu */
+.dropdown {
+    float: left;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #667eea;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .move-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .move-card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .difficulty {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .beginner {
+            background: #4caf50;
+            color: white;
+        }
+
+        .intermediate {
+            background: #ff9800;
+            color: white;
+        }
+
+        .advanced {
+            background: #f44336;
+            color: white;
+        }
+
+        table {
+            margin-top: 20px;
+        }
+
+        .table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .step-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .step-list li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+
+        .step-list li strong {
+            color: #667eea;
+        }
