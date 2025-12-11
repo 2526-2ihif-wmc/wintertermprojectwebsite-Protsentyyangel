@@ -255,3 +255,59 @@ ul,
 ol {
     line-height: 1.8;
 }
+
+/* Sticky Sidebar */
+.sidebar {
+    position: fixed;
+    left: 20px;
+    top: 150px;
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.sidebar-nav h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-left: 3px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: #f0f0f0;
+    padding-left: 15px;
+    color: #667eea;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
