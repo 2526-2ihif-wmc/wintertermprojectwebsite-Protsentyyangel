@@ -1,63 +1,25 @@
+/* ---------------- Body ---------------- */
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
-/* navbar */
-.navbar {
-    background-color: #667eea;
-    padding: 15px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1000;
+/* ---------------- Navbar ---------------- */
 
-}
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    float: left;
-}
-
-.navbar a:hover {
-    background-color: #5568d3;
-}
-
-/* dropdown menu */
-.dropdown {
-    float: left;
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #667eea;
-    min-width: 200px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* hero image with text on homepage */
+/* ---------------- Hero Section ---------------- */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200');
     background-size: cover;
+    background-position: center;
     height: 400px;
     position: relative;
 }
 
+/* Hero Text */
 .hero-text {
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -77,6 +39,7 @@ body {
     font-size: 24px;
     margin: 10px 0 0 0;
 }
+
 
 /* page title */
 .page-title {
@@ -144,6 +107,7 @@ body {
 .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-decoration:none;
 }
 
 .box img {
