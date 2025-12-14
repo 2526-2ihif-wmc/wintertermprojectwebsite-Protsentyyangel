@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- Navigation Bar -->
+<!-- NAVBAR START -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -37,17 +37,19 @@
         </ul>
     </div>
 </nav>
+<!-- NAVBAR END -->
 
-<!-- Page Header -->
+<!-- HERO START -->
 <div class="page-header">
     <h1>Gym Mastery</h1>
     <p>Build strength, muscle, and transform your body with weights</p>
 </div>
+<!-- HERO END -->
 
-<!-- Main Content with Sidebar -->
+<!-- MAIN START -->
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
+        <!-- SIDEBAR START -->
         <div class="col-lg-3 col-md-4 sidebar-column">
             <div class="sidebar-sticky">
                 <h5 class="sidebar-title">Sections</h5>
@@ -63,8 +65,9 @@
                 </nav>
             </div>
         </div>
+        <!-- SIDEBAR END -->
 
-        <!-- Content -->
+        <!-- CONTENT START -->
         <div class="col-lg-9 col-md-8">
             <div class="content-wrapper">
                 
@@ -589,13 +592,36 @@
 
             </div>
         </div>
+        <!-- CONTENT END -->
     </div>
 </div>
+<!-- MAIN END -->
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+(function(){
+    function getOffset(){ var n = document.querySelector('.navbar'); return n ? n.offsetHeight : 0; }
+    document.querySelectorAll('.sidebar-nav a[href^="#"]').forEach(function(link){
+        link.addEventListener('click', function(e){
+            var id = this.getAttribute('href').slice(1);
+            var target = document.getElementById(id);
+            if(!target) return;
+            e.preventDefault();
+            var y = target.getBoundingClientRect().top + window.pageYOffset - getOffset() - 12;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            history.replaceState(null, '', '#' + id);
+        });
+    });
+    if(location.hash){
+        var id = location.hash.slice(1); var el = document.getElementById(id);
+        if(el) setTimeout(function(){ var y = el.getBoundingClientRect().top + window.pageYOffset - getOffset() - 12; window.scrollTo({ top: y, behavior: 'smooth' }); }, 50);
+    }
+})();
+</script>
 
 </body>
 </html>
