@@ -614,25 +614,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #667eea;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #5568d3;
-}
-
 table {
     margin-top: 20px;
 }

@@ -1,382 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Exercises - WaveFit</title>
-    <link rel="stylesheet" href="styleForHomeWorkout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styleForHomeWorkout.css">
+    <meta name="description" content="Home workouts, plans, progressions and quick routines - WaveFit">
 </head>
 <body>
 
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
+    <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown"
-           role="button" data-toggle="dropdown">
-          Workouts
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
-          <a class="dropdown-item" href="wavefit-running.html">Running</a>
-          <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
-          <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button" data-toggle="dropdown">Workouts</a>
+                <div class="dropdown-menu" aria-labelledby="workoutsDropdown">
+                    <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
+                    <a class="dropdown-item" href="wavefit-running.html">Running</a>
+                    <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
+                    <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </nav>
 
-<!-- Main Content with Sidebar -->
-<div class="row g-0">
-    <!-- Sidebar -->
-    <div class="col-md-3 bg-light p-4 sticky-sidebar">
-        <h5 class="mb-3 fw-bold text-primary">Sections</h5>
-        <nav class="nav flex-column">
-            <a class="nav-link" href="#WhyHome">Why Home?</a>
-            <a class="nav-link" href="#FullBody">Full Body</a>
-            <a class="nav-link" href="#7DayPlan">7-Day Plan</a>
-            <a class="nav-link" href="#Household">Household Items</a>
-            <a class="nav-link" href="#Easier">Make Easier/Harder</a>
-            <a class="nav-link" href="#QuickWorkout">Quick Workouts</a>
-            <a class="nav-link" href="#Advanced">Advanced Movements</a>
-            <a class="nav-link" href="#Tips">Success Tips</a>
-        </nav>
+<!-- Page Header -->
+<div class="page-header">
+    <h1>Home Workouts</h1>
+    <p>Efficient, equipment-free routines you can do anywhere.</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-3 col-md-4 sidebar-column">
+            <div class="sidebar-sticky">
+                <h5 class="sidebar-title">Sections</h5>
+                <nav class="nav flex-column sidebar-nav">
+                    <a class="nav-link" href="#WhyHome">Why Home?</a>
+                    <a class="nav-link" href="#FullBody">Full Body</a>
+                    <a class="nav-link" href="#7DayPlan">7-Day Plan</a>
+                    <a class="nav-link" href="#Household">Household Items</a>
+                    <a class="nav-link" href="#Easier">Modify Exercise</a>
+                    <a class="nav-link" href="#QuickWorkout">Quick Workouts</a>
+                    <a class="nav-link" href="#Advanced">Advanced Moves</a>
+                    <a class="nav-link" href="#Tips">Success Tips</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="col-lg-9 col-md-8">
+            <div class="content-wrapper">
+
+                <section class="section-card">
+                    <div class="section-header">
+                        <h2 id="WhyHome">Why Home Workouts?
+                            <a href="https://www.youtube.com/results?search_query=benefits+of+home+workouts" target="_blank" class="youtube-icon" title="Watch Home Workout Benefits"><i class="fab fa-youtube"></i></a>
+                        </h2>
+                    </div>
+                    <img src="../images/home-why.jpg" alt="Home workout" class="img-fluid mb-3" style="max-height:300px; object-fit:cover;">
+                    <p>Home workouts are ideal for busy schedules and limited budgets—great results without a gym membership.</p>
+                    <div class="benefits-grid">
+                        <div class="benefit-item"><h4>Save Time</h4><p>Skip travel and train at your convenience.</p></div>
+                        <div class="benefit-item"><h4>Low Cost</h4><p>Minimal or no equipment required.</p></div>
+                        <div class="benefit-item"><h4>Privacy</h4><p>Focus on progress without distractions.</p></div>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header">
+                        <h2 id="FullBody">Full Body Workout (No Equipment)
+                            <a href="https://www.youtube.com/results?search_query=full+body+home+workout+no+equipment" target="_blank" class="youtube-icon" title="Watch Full Body Workout"><i class="fab fa-youtube"></i></a>
+                        </h2>
+                    </div>
+                    <img src="../images/home-fullbody.jpg" alt="Full body workout" class="img-fluid mb-3" style="max-height:300px; object-fit:cover;">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-primary">
+                                <tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Jumping Jacks (warm-up)</td><td>1</td><td>50</td><td>30s</td></tr>
+                                <tr><td>Push-ups</td><td>3</td><td>10-15</td><td>60s</td></tr>
+                                <tr><td>Squats</td><td>3</td><td>15-20</td><td>60s</td></tr>
+                                <tr><td>Plank</td><td>3</td><td>30-60s</td><td>60s</td></tr>
+                                <tr><td>Lunges</td><td>3</td><td>12 each</td><td>60s</td></tr>
+                                <tr><td>Mountain Climbers</td><td>3</td><td>20</td><td>45s</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header"><h2 id="7DayPlan">7-Day Home Workout Plan
+                        <a href="https://www.youtube.com/results?search_query=7+day+home+workout+plan" target="_blank" class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    </h2></div>
+                    <img src="../images/home-7day.jpg" alt="7 day plan" class="img-fluid mb-3" style="max-height:300px; object-fit:cover;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Monday - Upper Body</h5>
+                            <p>Push-ups (4x12), Pike Push-ups (3x10), Tricep Dips (3x12)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Tuesday - Lower Body</h5>
+                            <p>Squats (4x20), Lunges (3x15 each), Jump Squats (3x10)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header"><h2 id="Household">Using Household Items
+                        <a href="https://www.youtube.com/results?search_query=home+workout+using+household+items" target="_blank" class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    </h2></div>
+                    <img src="../images/home-household.jpg" alt="household items" class="img-fluid mb-3" style="max-height:300px; object-fit:cover;">
+                    <div class="type-grid">
+                        <div class="type-card"><h4>Water Bottles</h4><p>Shoulder press, bicep curls</p></div>
+                        <div class="type-card"><h4>Backpack</h4><p>Weighted squats, lunges</p></div>
+                        <div class="type-card"><h4>Chair</h4><p>Tricep dips, step-ups</p></div>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header"><h2 id="Easier">Modify Exercises (Easier / Harder)
+                        <a href="https://www.youtube.com/results?search_query=exercise+progressions" target="_blank" class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    </h2></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Easier</h5>
+                            <ul class="step-list"><li>Knee push-ups</li><li>Plank on knees</li><li>Regular squats</li></ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Harder</h5>
+                            <ul class="step-list"><li>Decline push-ups</li><li>One-arm plank</li><li>Pistol squats</li></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header"><h2 id="QuickWorkout">Quick 10-Minute Workouts
+                        <a href="https://www.youtube.com/results?search_query=10+minute+home+workout" target="_blank" class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    </h2></div>
+                    <img src="../images/home-quick.jpg" alt="quick workouts" class="img-fluid mb-3" style="max-height:300px; object-fit:cover;">
+                    <h5>Morning Energy (45s on / 15s off x2)</h5>
+                    <ul><li>Jumping Jacks</li><li>Push-ups</li><li>Squats</li><li>High Knees</li><li>Plank</li></ul>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header"><h2 id="Advanced">Advanced Home Moves
+                        <a href="https://www.youtube.com/results?search_query=advanced+home+workout+movements" target="_blank" class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    </h2></div>
+                    <img src="../images/home-advanced.jpg" alt="advanced moves" class="img-fluid mb-3" style="max-height:300px; object-fit:cover;">
+                    <div class="mistakes-grid">
+                        <div class="mistake-card"><h5>One-Arm Push-ups</h5><p>Progress from archer → pseudo → full</p></div>
+                        <div class="mistake-card"><h5>Pistol Squats</h5><p>Work on assisted variations first</p></div>
+                        <div class="mistake-card"><h5>L-Sit</h5><p>Start from tuck L-sit and build time</p></div>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <div class="section-header"><h2 id="Tips">Success Tips</h2></div>
+                    <ul class="step-list">
+                        <li><strong>Create Space:</strong> Dedicate an area for workouts</li>
+                        <li><strong>Set Schedule:</strong> Train at the same time daily</li>
+                        <li><strong>Track Progress:</strong> Log sets, reps and notes</li>
+                        <li><strong>Warm Up:</strong> 5 minutes before you train</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
     </div>
-    <!-- Content -->
-    <div class="col-md-9 p-4">
-        <div class="section">
-            <h2 id="WhyHome">Why Home Workouts?
-                <a href="https://www.youtube.com/results?search_query=benefits+of+home+workouts" target="_blank" class="youtube-icon" title="Watch Home Workout Benefits">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            <p>Perfect for busy schedules and limited budgets. Get great results at home!</p>
-            
-            <h4>Benefits</h4>
-            <ul>
-                <li>No gym membership needed</li>
-                <li>Save time on travel</li>
-                <li>Exercise anytime</li>
-                <li>Privacy and comfort</li>
-                <li>Can do anywhere</li>
-            </ul>
-        </div>
+</div>
 
-        <div class="section">
-            <h2 id="FullBody">Full Body Workout (No Equipment)
-                <a href="https://www.youtube.com/results?search_query=full+body+home+workout+no+equipment" target="_blank" class="youtube-icon" title="Watch Full Body Workout">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            <p>30 minutes - Beginner to Intermediate</p>
-            
-            <table>
-                <tr>
-                    <th>Exercise</th>
-                    <th>Sets</th>
-                    <th>Reps</th>
-                    <th>Rest</th>
-                </tr>
-                <tr>
-                    <td>Jumping Jacks (warm-up)</td>
-                    <td>1</td>
-                    <td>50</td>
-                    <td>30 sec</td>
-                </tr>
-                <tr>
-                    <td>Push-ups</td>
-                    <td>3</td>
-                    <td>10-15</td>
-                    <td>60 sec</td>
-                </tr>
-                <tr>
-                    <td>Squats</td>
-                    <td>3</td>
-                    <td>15-20</td>
-                    <td>60 sec</td>
-                </tr>
-                <tr>
-                    <td>Plank</td>
-                    <td>3</td>
-                    <td>30-60 sec</td>
-                    <td>60 sec</td>
-                </tr>
-                <tr>
-                    <td>Lunges</td>
-                    <td>3</td>
-                    <td>12 each leg</td>
-                    <td>60 sec</td>
-                </tr>
-                <tr>
-                    <td>Mountain Climbers</td>
-                    <td>3</td>
-                    <td>20 total</td>
-                    <td>45 sec</td>
-                </tr>
-                <tr>
-                    <td>Pike Push-ups</td>
-                    <td>3</td>
-                    <td>8-12</td>
-                    <td>60 sec</td>
-                </tr>
-                <tr>
-                    <td>Glute Bridges</td>
-                    <td>3</td>
-                    <td>15-20</td>
-                    <td>45 sec</td>
-                </tr>
-                <tr>
-                    <td>Bicycle Crunches</td>
-                    <td>3</td>
-                    <td>20 total</td>
-                    <td>45 sec</td>
-                </tr>
-                <tr>
-                    <td>Burpees</td>
-                    <td>2</td>
-                    <td>10</td>
-                    <td>90 sec</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2 id="7DayPlan">7-Day Home Workout Plan
-                <a href="https://www.youtube.com/results?search_query=7+day+home+workout+plan" target="_blank" class="youtube-icon" title="Watch 7-Day Plan">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            
-            <h4>Monday - Upper Body</h4>
-            <p>Push-ups (4x12), Pike Push-ups (3x10), Tricep Dips (3x12), Plank (3x45sec)</p>
-
-            <h4>Tuesday - Lower Body</h4>
-            <p>Squats (4x20), Lunges (3x15 each), Jump Squats (3x10), Wall Sit (3x45sec)</p>
-
-            <h4>Wednesday - Core & Cardio</h4>
-            <p>Plank (3x60sec), Mountain Climbers (4x20), Burpees (3x10), High Knees (3x30sec)</p>
-
-            <h4>Thursday - Full Body</h4>
-            <p>Circuit (3 rounds): Push-ups x10, Squats x15, Plank x30sec, Lunges x10 each, Burpees x8</p>
-
-            <h4>Friday - HIIT</h4>
-            <p>30sec work / 15sec rest: Jumping Jacks, Burpees, High Knees, Mountain Climbers (Repeat 4x)</p>
-
-            <h4>Saturday - Active Recovery</h4>
-            <p>Yoga, stretching, or light walking</p>
-
-            <h4>Sunday - Rest</h4>
-            <p>Complete rest day</p>
-        </div>
-
-        <div class="section">
-            <h2 id="Household">Using Household Items
-                <a href="https://www.youtube.com/results?search_query=home+workout+using+household+items" target="_blank" class="youtube-icon" title="Watch Household Items">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Exercises</th>
-                </tr>
-                <tr>
-                    <td>Water Bottles / Books</td>
-                    <td>Shoulder Press, Bicep Curls, Lateral Raises</td>
-                </tr>
-                <tr>
-                    <td>Backpack (filled)</td>
-                    <td>Weighted Squats, Weighted Lunges</td>
-                </tr>
-                <tr>
-                    <td>Chair</td>
-                    <td>Tricep Dips, Step-ups, Decline Push-ups</td>
-                </tr>
-                <tr>
-                    <td>Towel</td>
-                    <td>Sliding Mountain Climbers, Hamstring Curls</td>
-                </tr>
-                <tr>
-                    <td>Wall</td>
-                    <td>Wall Sits, Wall Push-ups, Handstand Practice</td>
-                </tr>
-                <tr>
-                    <td>Stairs</td>
-                    <td>Step-ups, Calf Raises, Stair Sprints</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2 id="Easier">Make Exercises Easier or Harder
-                <a href="https://www.youtube.com/results?search_query=exercise+progressions+regressions+modifications" target="_blank" class="youtube-icon" title="Watch Exercise Modifications">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            
-            <h4>Easier Versions</h4>
-            <table>
-                <tr>
-                    <th>Exercise</th>
-                    <th>Easier Version</th>
-                </tr>
-                <tr>
-                    <td>Push-ups</td>
-                    <td>Knee push-ups or wall push-ups</td>
-                </tr>
-                <tr>
-                    <td>Plank</td>
-                    <td>Plank on knees</td>
-                </tr>
-                <tr>
-                    <td>Burpees</td>
-                    <td>Step back instead of jump</td>
-                </tr>
-                <tr>
-                    <td>Jump Squats</td>
-                    <td>Regular squats</td>
-                </tr>
-            </table>
-
-            <h4>Harder Versions</h4>
-            <table>
-                <tr>
-                    <th>Exercise</th>
-                    <th>Harder Version</th>
-                </tr>
-                <tr>
-                    <td>Push-ups</td>
-                    <td>Decline or diamond push-ups</td>
-                </tr>
-                <tr>
-                    <td>Plank</td>
-                    <td>One-arm plank or plank with leg lift</td>
-                </tr>
-                <tr>
-                    <td>Squats</td>
-                    <td>Pistol squats or jump squats</td>
-                </tr>
-                <tr>
-                    <td>Lunges</td>
-                    <td>Jumping lunges</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2 id="QuickWorkout">Quick 10-Minute Workouts
-                <a href="https://www.youtube.com/results?search_query=10+minute+home+workout+HIIT" target="_blank" class="youtube-icon" title="Watch Quick Workouts">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            
-            <h4>Morning Energy Boost</h4>
-            <p>45 seconds each, 15 seconds rest (repeat 2x):</p>
-            <ul>
-                <li>Jumping Jacks</li>
-                <li>Push-ups</li>
-                <li>Squats</li>
-                <li>High Knees</li>
-                <li>Plank</li>
-            </ul>
-
-            <h4>Abs Blast</h4>
-            <p>30 seconds each, no rest (repeat 2x):</p>
-            <ul>
-                <li>Crunches</li>
-                <li>Bicycle Crunches</li>
-                <li>Plank</li>
-                <li>Russian Twists</li>
-                <li>Leg Raises</li>
-            </ul>
-
-            <h4>Lower Body Burner</h4>
-            <p>12 reps each (repeat 2-3x):</p>
-            <ul>
-                <li>Squats</li>
-                <li>Lunges (each leg)</li>
-                <li>Jump Squats</li>
-                <li>Glute Bridges</li>
-                <li>Wall Sit (30 sec)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 id="Tips">Success Tips</h2>
-            <ul>
-                <li><strong>Create Space:</strong> Dedicate an area for workouts</li>
-                <li><strong>Set Schedule:</strong> Same time each day</li>
-                <li><strong>Wear Workout Clothes:</strong> Gets you in the mood</li>
-                <li><strong>Use Timer:</strong> Keep workouts structured</li>
-                <li><strong>Stay Hydrated:</strong> Keep water nearby</li>
-                <li><strong>Follow Plan:</strong> Don't randomly pick exercises</li>
-                <li><strong>Track Progress:</strong> Write down your workouts</li>
-                <li><strong>Warm Up:</strong> Always take 5 minutes to warm up</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 id="Advanced">Advanced Home Workout Movements
-                <a href="https://www.youtube.com/results?search_query=advanced+home+workout+movements+calisthenics" target="_blank" class="youtube-icon" title="Watch Advanced Movements">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </h2>
-            <p>Once you master the basics, challenge yourself with these advanced movements to continue building strength and athleticism at home.</p>
-
-            <h4>One-Arm Push-Ups</h4>
-            <ul>
-                <li><strong>Benefits:</strong> Ultimate pushing strength builder</li>
-                <li><strong>Progression:</strong> Start with archer push-ups, progress to pseudo one-arm, then full</li>
-                <li><strong>Sets & Reps:</strong> 3-5 sets x 3-8 reps</li>
-                <li><strong>Form:</strong> Keep core tight, legs wide for stability</li>
-            </ul>
-
-            <h4>Pistol Squats (Single Leg)</h4>
-            <ul>
-                <li><strong>Benefits:</strong> Extreme leg strength and mobility</li>
-                <li><strong>Progression:</strong> Start with assisted (hold something), then deep step-ups, then partial pistols</li>
-                <li><strong>Sets & Reps:</strong> 3 sets x 5-8 reps per leg</li>
-                <li><strong>Form:</strong> Keep chest upright, extend other leg forward</li>
-            </ul>
-
-            <h4>Handstand Hold</h4>
-            <ul>
-                <li><strong>Benefits:</strong> Core, shoulder, and wrist strength</li>
-                <li><strong>Progression:</strong> Wall handstands → chest-to-wall → back-to-wall → freestanding</li>
-                <li><strong>Duration:</strong> Start with 10-20 seconds, progress to 60+ seconds</li>
-                <li><strong>Safety:</strong> Always have a wall or spotter nearby</li>
-            </ul>
-
-            <h4>Planche Lean</h4>
-            <ul>
-                <li><strong>Benefits:</strong> Advanced core and shoulder stability</li>
-                <li><strong>Progression:</strong> High planche lean → middle planche lean → low planche lean</li>
-                <li><strong>Hold Time:</strong> Start with 5-10 seconds, increase gradually</li>
-                <li><strong>Form:</strong> Shoulders over hands, keep body straight</li>
-            </ul>
-
-            <h4>L-Sit Hold</h4>
-            <ul>
-                <li><strong>Benefits:</strong> Core strength and hip flexor flexibility</li>
-                <li><strong>Progression:</strong> Partial L-sit (bent knees) → full L-sit on floor → on chairs/bars</li>
-                <li><strong>Duration:</strong> 10-20 seconds initially, progress to 60+ seconds</li>
-                <li><strong>Form:</strong> Push through hands to lift body off ground</li>
-            </ul>
-        </div>
-
-    </div>
-    </div>
-
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
