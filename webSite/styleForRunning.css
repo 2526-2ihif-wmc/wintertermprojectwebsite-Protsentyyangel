@@ -11,7 +11,7 @@ html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7ff 0%, #f0f4ff 100%);
+    background: linear-gradient(135deg, #e9eefc 0%, #d6dcff 100%);
     color: #333;
     line-height: 1.6;
 }
@@ -181,7 +181,7 @@ body {
 
 /* Section Cards */
 .section-card {
-    background: white;
+    background: #fbfbff;
     border-radius: 16px;
     padding: 2.5rem;
     margin-bottom: 2.5rem;
@@ -234,27 +234,51 @@ body {
     flex: 1;
 }
 
-/* YouTube Icon */
+/* Heading Wrapper for YouTube Icon */
+.heading-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heading-wrapper h2 {
+    margin: 0;
+    flex: 1;
+}
+
+/* YouTube Icon Styling */
 .youtube-icon {
     color: #ff0000;
-    font-size: 1.5rem;
-    margin-left: 1rem;
+    font-size: 0.8em;
+    margin-left: 10px;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 0, 0, 0.1);
+    width: 32px;
+    height: 32px;
+    background: #ffe0e0;
     border-radius: 50%;
 }
 
 .youtube-icon:hover {
-    color: #fff;
+    color: #ffffff;
     background: #ff0000;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
+
+/* Interactive list expand/collapse */
+.expand-toggle {
+    margin-left: 8px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    color: #667eea;
+}
+.more { display: none; margin-top: 0.4rem; color: #444; padding-left: 8px }
+.more.show { display: block }
 
 .section-image {
     width: 100%;
