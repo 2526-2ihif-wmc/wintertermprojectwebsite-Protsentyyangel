@@ -1,14 +1,22 @@
-/* ---------------- Body ---------------- */
+/* ==========================================
+   GENERAL STYLING
+   ========================================== */
+/* Body - Main page background and font */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e9eefc 0%, #d6dcff 100%);
+    color: #333;
+    line-height: 1.6;   
 }
 
-/* ---------------- Navbar ---------------- */
+/* Navbar - Navigation bar styling */
+/* (Bootstrap-based navbar styling) */
 
 
-/* ---------------- Hero Section ---------------- */
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+/* Hero background image with overlay */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200');
     background-size: cover;
@@ -41,7 +49,10 @@ body {
 }
 
 
-/* page title */
+/* ==========================================
+   HOME PAGE CONTENT
+   ========================================== */
+/* Page title styling */
 .page-title {
     text-align: center;
     margin: 50px 0;
@@ -49,14 +60,14 @@ body {
     color: #333;
 }
 
-/* boxes container on homepage */
+/* Fitness category boxes container */
 .boxes {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 
-/* sport box on homepage */
+/* Individual fitness box styling and animation */
 .box {
     width: 45%;
     float: left;
@@ -70,12 +81,12 @@ body {
 
     text-decoration: none;
 
-
-    /* animation */
+    /* Slide-up animation on page load */
     opacity: 0;
     animation: slideup 0.8s forwards;
 }
 
+/* Stagger animation timing for each box */
 .box:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -92,6 +103,7 @@ body {
     animation-delay: 0.4s;
 }
 
+/* Slide-up animation keyframes */
 @keyframes slideup {
     from {
         opacity: 0;
@@ -104,118 +116,38 @@ body {
     }
 }
 
+/* Box hover effect - lift up on mouse over */
 .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-decoration:none;
 }
 
+/* Box image styling */
 .box img {
     width: 100%;
     height: 250px;
     display: block;
 }
 
+/* Box text content styling */
 .box-text {
     padding: 20px;
 }
 
+/* Box heading styling */
 .box-text h3 {
     color: #667eea;
     margin-top: 0;
 }
 
+/* Box description text */
 .box-text p {
     color: #666;
     line-height: 1.5;
 }
 
-/* clear floats */
+/* Clear floats for layout */
 .clear {
     clear: both;
-}
-
-/* page header for other pages */
-.header {
-    background-color: #667eea;
-    color: white;
-    text-align: center;
-    padding: 60px 0;
-}
-
-.header h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-/* content area */
-.content {
-    width: 80%;
-    margin: 30px auto;
-}
-
-/* sections */
-.section {
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
-
-.section h2 {
-    color: #667eea;
-    margin-top: 0;
-}
-
-/* difficulty badges */
-.badge {
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-}
-
-.beginner {
-    background-color: green;
-}
-
-.intermediate {
-    background-color: orange;
-}
-
-.advanced {
-    background-color: red;
-}
-
-/* tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    /* important for visible clean lines */
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    /* outer border */
-}
-
-th,
-td {
-    border: 1px solid #ddd;
-    /* cell borders */
-    padding: 12px;
-}
-
-th {
-    background-color: #667eea;
-    color: white;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-ul,
-ol {
-    line-height: 1.8;
 }

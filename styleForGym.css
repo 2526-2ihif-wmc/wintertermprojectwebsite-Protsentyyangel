@@ -16,9 +16,6 @@ body {
     line-height: 1.6;
 }
 
-/* Smooth native scrolling for anchor links (enhanced by JS for offset) */
-html { scroll-behavior: smooth; }
-
 /* Navigation Bar */
 .navbar {
     box-shadow: 0 4px 20px rgba(102, 126, 234, 0.15);
@@ -231,6 +228,8 @@ html { scroll-behavior: smooth; }
 }
 .more { display: none; margin-top: 0.4rem; color: #444; padding-left: 8px }
 .more.show { display: block }
+
+#backToTop { position: fixed; bottom: 20px; right: 20px; padding: 8px 12px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; z-index: 1000; }
 
 .section-header {
     display: flex;
@@ -820,10 +819,6 @@ html { scroll-behavior: smooth; }
     background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
 table {
     margin-top: 20px;
 }

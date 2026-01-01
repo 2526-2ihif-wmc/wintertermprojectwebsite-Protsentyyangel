@@ -146,6 +146,8 @@ body {
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%) 1;
 }
 
 .sidebar-title {
@@ -157,7 +159,9 @@ body {
     border-bottom: 2px solid #667eea;
 }
 
-.sidebar-nav .nav-link {
+.sidebar-nav {
+    padding: 0;
+}
     color: #555 !important;
     padding: 0.75rem 0;
     border-left: 3px solid transparent;
@@ -279,6 +283,8 @@ body {
 }
 .more { display: none; margin-top: 0.4rem; color: #444; padding-left: 8px }
 .more.show { display: block }
+
+#backToTop { position: fixed; bottom: 20px; right: 20px; padding: 8px 12px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; z-index: 1000; }
 
 .section-image {
     width: 100%;
@@ -700,9 +706,4 @@ body {
 
 .bg-light-gradient {
     background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
 }
