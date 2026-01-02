@@ -1,6 +1,4 @@
-/* ==========================================
-   GENERAL STYLING
-   ========================================== */
+
 /* Body - Main page background and font */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,12 +8,9 @@ body {
 }
 
 /* Navbar - Navigation bar styling */
-/* (Bootstrap-based navbar styling) */
 
 
-/* ==========================================
-   HERO SECTION
-   ========================================== */
+
 /* Hero background image with overlay */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200');
@@ -150,4 +145,20 @@ body {
 /* Clear floats for layout */
 .clear {
     clear: both;
+}
+
+/* Show tooltip-like tips from data-more attribute via CSS (hover to reveal) */
+.section-card ul li::after, .step-list li::after {
+    content: attr(data-more);
+    display: block;
+    color: #444;
+    margin-top: 0.4rem;
+    padding-left: 8px;
+    font-size: 0.95rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+.section-card ul li:hover::after, .step-list li:hover::after, .section-card ul li:focus-within::after, .step-list li:focus-within::after {
+    max-height: 200px;
 }
