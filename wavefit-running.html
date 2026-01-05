@@ -1,461 +1,483 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Running - WaveFit</title>
-    
+
     <!-- Bootstrap Framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styleForRunning.css">
 </head>
+
 <body id="top">
 
-<!-- ========================================
+    <!-- ========================================
      NAVIGATION BAR
      ======================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button" data-toggle="dropdown">
-                    Workouts
-                </a>
-                <div class="dropdown-menu" aria-labelledby="workoutsDropdown">
-                    <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
-                    <a class="dropdown-item" href="wavefit-running.html">Running</a>
-                    <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
-                    <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button"
+                        data-toggle="dropdown">
+                        Workouts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="workoutsDropdown">
+                        <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
+                        <a class="dropdown-item" href="wavefit-running.html">Running</a>
+                        <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
+                        <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HERO START -->
+    <div class="page-header">
+        <h1>Running Mastery</h1>
+        <p>Build endurance, speed, and mental toughness through running</p>
+    </div>
+    <!-- HERO END -->
+
+    <!-- MAIN START -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- SIDEBAR START -->
+            <div class="col-lg-3 col-md-4 sidebar-column">
+                <div class="sidebar-sticky">
+                    <h5 class="sidebar-title">Sections</h5>
+                    <nav class="nav flex-column sidebar-nav">
+                        <a class="nav-link" href="#Benefits">Benefits</a>
+                        <a class="nav-link" href="#BeginnerPlan">Beginner Plan</a>
+                        <a class="nav-link" href="#RunningTypes">Running Types</a>
+                        <a class="nav-link" href="#ProperForm">Proper Form</a>
+                        <a class="nav-link" href="#Mistakes">Common Mistakes</a>
+                        <a class="nav-link" href="#5KTraining">5K Training</a>
+                        <a class="nav-link" href="#Nutrition">Nutrition</a>
+                        <a class="nav-link" href="#Injuries">Injury Prevention</a>
+                    </nav>
                 </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- NAVBAR END -->
-
-<!-- HERO START -->
-<div class="page-header">
-    <h1>Running Mastery</h1>
-    <p>Build endurance, speed, and mental toughness through running</p>
-</div>
-<!-- HERO END -->
-
-<!-- MAIN START -->
-<div class="container-fluid">
-    <div class="row">
-        <!-- SIDEBAR START -->
-        <div class="col-lg-3 col-md-4 sidebar-column">
-            <div class="sidebar-sticky">
-                <h5 class="sidebar-title">Sections</h5>
-                <nav class="nav flex-column sidebar-nav">
-                    <a class="nav-link" href="#Benefits">Benefits</a>
-                    <a class="nav-link" href="#BeginnerPlan">Beginner Plan</a>
-                    <a class="nav-link" href="#RunningTypes">Running Types</a>
-                    <a class="nav-link" href="#ProperForm">Proper Form</a>
-                    <a class="nav-link" href="#Mistakes">Common Mistakes</a>
-                    <a class="nav-link" href="#5KTraining">5K Training</a>
-                    <a class="nav-link" href="#Nutrition">Nutrition</a>
-                    <a class="nav-link" href="#Injuries">Injury Prevention</a>
-                </nav>
             </div>
-        </div>
-        <!-- SIDEBAR END -->
+            <!-- SIDEBAR END -->
 
-        <!-- CONTENT START -->
-        <div class="col-lg-9 col-md-8">
-            <div class="content-wrapper">
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="BeginnerPlan">Beginner Run/Walk Plan</h2>
-                        <a href="https://www.youtube.com/results?search_query=beginner+run+walk+plan" target="_blank" class="youtube-icon" title="Watch Beginner Plan">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead class="table-primary">
-                                <tr><th>Week</th><th>Short</th><th>Moderate</th><th>Progress</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>1</strong></td>
-                                    <td>Walk 4min, Run 2min (x4)</td>
-                                    <td>Walk 4min, Run 2min (x5)</td>
-                                    <td>Walk 3min, Run 3min (x4)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>2</strong></td>
-                                    <td>Walk 3min, Run 3min (x4)</td>
-                                    <td>Walk 3min, Run 3min (x5)</td>
-                                    <td>Walk 2min, Run 4min (x4)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3</strong></td>
-                                    <td>Walk 2min, Run 5min (x4)</td>
-                                    <td>Walk 2min, Run 6min (x3)</td>
-                                    <td>Walk 1min, Run 7min (x3)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>4</strong></td>
-                                    <td>Walk 1min, Run 9min (x3)</td>
-                                    <td>Walk 1min, Run 10min (x2)</td>
-                                    <td>Run 15min, Walk 2min, Run 10min</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>5-6</strong></td>
-                                    <td>Run 20min, Walk 1min, Run 5min</td>
-                                    <td>Run 25min continuously</td>
-                                    <td>Run 30min easy</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>7-8</strong></td>
-                                    <td>Run 30min</td>
-                                    <td>Run 35min</td>
-                                    <td>Run 40min goal</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <!-- Running Types -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="RunningTypes">Types of Running</h2>
-                        <a href="https://www.youtube.com/results?search_query=types+of+running+easy+tempo+interval" target="_blank" class="youtube-icon" title="Watch Running Types">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>Different running workouts serve different purposes. Mix them throughout the week for balanced development.</p>
+            <!-- CONTENT START -->
+            <div class="col-lg-9 col-md-8">
+                <div class="content-wrapper">
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="BeginnerPlan">Beginner Run/Walk Plan</h2>
+                            <a href="https://www.youtube.com/results?search_query=beginner+run+walk+plan"
+                                target="_blank" class="youtube-icon" title="Watch Beginner Plan">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Short</th>
+                                        <th>Moderate</th>
+                                        <th>Progress</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1</strong></td>
+                                        <td>Walk 4min, Run 2min (x4)</td>
+                                        <td>Walk 4min, Run 2min (x5)</td>
+                                        <td>Walk 3min, Run 3min (x4)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2</strong></td>
+                                        <td>Walk 3min, Run 3min (x4)</td>
+                                        <td>Walk 3min, Run 3min (x5)</td>
+                                        <td>Walk 2min, Run 4min (x4)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3</strong></td>
+                                        <td>Walk 2min, Run 5min (x4)</td>
+                                        <td>Walk 2min, Run 6min (x3)</td>
+                                        <td>Walk 1min, Run 7min (x3)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>4</strong></td>
+                                        <td>Walk 1min, Run 9min (x3)</td>
+                                        <td>Walk 1min, Run 10min (x2)</td>
+                                        <td>Run 15min, Walk 2min, Run 10min</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5-6</strong></td>
+                                        <td>Run 20min, Walk 1min, Run 5min</td>
+                                        <td>Run 25min continuously</td>
+                                        <td>Run 30min easy</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>7-8</strong></td>
+                                        <td>Run 30min</td>
+                                        <td>Run 35min</td>
+                                        <td>Run 40min goal</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
                     
-                    <div class="row running-types-grid">
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>🔄 Easy Run</h4>
-                                <p><strong>Pace:</strong> Conversational pace where you can easily talk</p>
-                                <p><strong>Purpose:</strong> Build aerobic base and recover</p>
-                                <p><strong>Frequency:</strong> 3-4 times per week</p>
-                                <p><strong>Duration:</strong> 30-60 minutes</p>
-                            </div>
+                    <!-- Running Types -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="RunningTypes">Types of Running</h2>
+                            <a href="https://www.youtube.com/results?search_query=types+of+running+easy+tempo+interval"
+                                target="_blank" class="youtube-icon" title="Watch Running Types">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>⚡ Tempo Run</h4>
-                                <p><strong>Pace:</strong> Comfortably hard, can speak short sentences</p>
-                                <p><strong>Purpose:</strong> Improve lactate threshold and speed</p>
-                                <p><strong>Frequency:</strong> 1 time per week</p>
-                                <p><strong>Duration:</strong> 20-40 minutes at tempo pace</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>🚀 Interval Training</h4>
-                                <p><strong>Pace:</strong> Alternate between fast and slow</p>
-                                <p><strong>Purpose:</strong> Increase speed and VO2 max</p>
-                                <p><strong>Frequency:</strong> 1 time per week</p>
-                                <p><strong>Duration:</strong> Example: 5x (3min fast, 2min slow)</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>🏃 Long Run</h4>
-                                <p><strong>Pace:</strong> Easy, same as easy runs</p>
-                                <p><strong>Purpose:</strong> Build endurance and mental toughness</p>
-                                <p><strong>Frequency:</strong> 1 time per week</p>
-                                <p><strong>Duration:</strong> 60+ minutes, gradually increase</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                        <p>Different running workouts serve different purposes. Mix them throughout the week for
+                            balanced development.</p>
 
-                <!-- Proper Form -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="ProperForm">Proper Running Form</h2>
-                        <a href="https://www.youtube.com/results?search_query=proper+running+form+technique" target="_blank" class="youtube-icon" title="Watch Running Form">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>Proper form prevents injuries and makes running more efficient. Focus on these key points:</p>
-                    
-                    <div class="form-checklist">
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Posture</h5>
-                                <p>Body upright with slight forward lean from ankles, not waist</p>
+                        <div class="row running-types-grid">
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>🔄 Easy Run</h4>
+                                    <p><strong>Pace:</strong> Conversational pace where you can easily talk</p>
+                                    <p><strong>Purpose:</strong> Build aerobic base and recover</p>
+                                    <p><strong>Frequency:</strong> 3-4 times per week</p>
+                                    <p><strong>Duration:</strong> 30-60 minutes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>⚡ Tempo Run</h4>
+                                    <p><strong>Pace:</strong> Comfortably hard, can speak short sentences</p>
+                                    <p><strong>Purpose:</strong> Improve lactate threshold and speed</p>
+                                    <p><strong>Frequency:</strong> 1 time per week</p>
+                                    <p><strong>Duration:</strong> 20-40 minutes at tempo pace</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>🚀 Interval Training</h4>
+                                    <p><strong>Pace:</strong> Alternate between fast and slow</p>
+                                    <p><strong>Purpose:</strong> Increase speed and VO2 max</p>
+                                    <p><strong>Frequency:</strong> 1 time per week</p>
+                                    <p><strong>Duration:</strong> Example: 5x (3min fast, 2min slow)</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>🏃 Long Run</h4>
+                                    <p><strong>Pace:</strong> Easy, same as easy runs</p>
+                                    <p><strong>Purpose:</strong> Build endurance and mental toughness</p>
+                                    <p><strong>Frequency:</strong> 1 time per week</p>
+                                    <p><strong>Duration:</strong> 60+ minutes, gradually increase</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Head Position</h5>
-                                <p>Look ahead 10-15 meters, not down at feet</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Shoulders</h5>
-                                <p>Relaxed and down, not tense or raised</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Arms</h5>
-                                <p>Bent at 90 degrees, swing naturally front to back</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Feet</h5>
-                                <p>Land on midfoot, not heels. Quick light steps</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Cadence</h5>
-                                <p>170-180 steps per minute for optimal efficiency</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Common Mistakes -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="Mistakes">Common Mistakes to Avoid</h2>
-                        <a href="https://www.youtube.com/results?search_query=common+running+mistakes" target="_blank" class="youtube-icon" title="Watch Running Mistakes">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="mistakes-grid">
-                        <div class="mistake-card danger">
-                            <h5>❌ Running Too Fast</h5>
-                            <p>Most beginners run easy runs too fast. Stay conversational pace.</p>
+                    <!-- Proper Form -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="ProperForm">Proper Running Form</h2>
+                            <a href="https://www.youtube.com/results?search_query=proper+running+form+technique"
+                                target="_blank" class="youtube-icon" title="Watch Running Form">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
-                        <div class="mistake-card danger">
-                            <h5>❌ Long Strides</h5>
-                            <p>Overstriding causes injury. Keep steps quick and light.</p>
-                        </div>
-                        <div class="mistake-card danger">
-                            <h5>❌ No Warm-up</h5>
-                            <p>Always walk or jog slowly for 5-10 minutes first.</p>
-                        </div>
-                        <div class="mistake-card danger">
-                            <h5>❌ Wrong Shoes</h5>
-                            <p>Get properly fitted running shoes for your gait.</p>
-                        </div>
-                        <div class="mistake-card danger">
-                            <h5>❌ Too Much Too Soon</h5>
-                            <p>Don't increase distance more than 10% per week.</p>
-                        </div>
-                        <div class="mistake-card danger">
-                            <h5>❌ Ignoring Pain</h5>
-                            <p>Sharp pain is a signal to stop. Rest and recover.</p>
-                        </div>
-                    </div>
-                </section>
+                        <p>Proper form prevents injuries and makes running more efficient. Focus on these key points:
+                        </p>
 
-                <!-- 5K Training -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="5KTraining">5K Race Training (Intermediate)</h2>
-                        <a href="https://www.youtube.com/results?search_query=5k+race+training+plan" target="_blank" class="youtube-icon" title="Watch 5K Training">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p class="alert alert-info">For runners who can already run 3-4 km continuously. 8-week training plan to prepare for a 5K race.</p>
-                    
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th>Week</th>
-                                    <th>Total Distance</th>
-                                    <th>Long Run</th>
-                                    <th>Speed Work</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>1</strong></td>
-                                    <td>15 km</td>
-                                    <td>5 km easy</td>
-                                    <td>4x 400m fast</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>2</strong></td>
-                                    <td>18 km</td>
-                                    <td>6 km easy</td>
-                                    <td>5x 400m fast</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>3</strong></td>
-                                    <td>20 km</td>
-                                    <td>7 km easy</td>
-                                    <td>6x 400m fast</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>4</strong></td>
-                                    <td>22 km</td>
-                                    <td>8 km easy</td>
-                                    <td>4x 800m tempo</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>5</strong></td>
-                                    <td>24 km</td>
-                                    <td>9 km easy</td>
-                                    <td>5x 800m tempo</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>6</strong></td>
-                                    <td>20 km</td>
-                                    <td>10 km easy</td>
-                                    <td>3x 1km tempo</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>7</strong></td>
-                                    <td>20 km</td>
-                                    <td>8 km easy</td>
-                                    <td>Light intervals</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>8</strong></td>
-                                    <td>15 km</td>
-                                    <td>5 km easy</td>
-                                    <td>Race Day! 🏃</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <!-- Nutrition -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="Nutrition">Nutrition for Runners</h2>
-                        <a href="https://www.youtube.com/results?search_query=running+nutrition+pre+during+post+workout" target="_blank" class="youtube-icon" title="Watch Running Nutrition">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>Proper nutrition is crucial for running performance and recovery.</p>
-                    
-                    <div class="row nutrition-grid">
-                        <div class="col-md-6">
-                            <div class="nutrition-card">
-                                <h4>🥗 Pre-Run Nutrition (30-60 min before)</h4>
-                                <ul class="nutrition-list">
-                                    <li><strong>Short runs:</strong> Light snack - banana, granola bar</li>
-                                    <li><strong>Long runs:</strong> Carbs + protein - oatmeal with banana</li>
-                                    <li><strong>Hydration:</strong> Water 2-3 hours and 15 min before</li>
-                                </ul>
+                        <div class="form-checklist">
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Posture</h5>
+                                    <p>Body upright with slight forward lean from ankles, not waist</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Head Position</h5>
+                                    <p>Look ahead 10-15 meters, not down at feet</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Shoulders</h5>
+                                    <p>Relaxed and down, not tense or raised</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Arms</h5>
+                                    <p>Bent at 90 degrees, swing naturally front to back</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Feet</h5>
+                                    <p>Land on midfoot, not heels. Quick light steps</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Cadence</h5>
+                                    <p>170-180 steps per minute for optimal efficiency</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="nutrition-card">
-                                <h4>🥤 During-Run (for runs over 90 min)</h4>
-                                <ul class="nutrition-list">
-                                    <li><strong>Carbs:</strong> 30-60g per hour</li>
-                                    <li><strong>Electrolytes:</strong> Sodium for hydration</li>
-                                    <li><strong>Hydration:</strong> 400-800ml water per hour</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="nutrition-card">
-                                <h4>🍌 Post-Run Recovery (within 30 min)</h4>
-                                <ul class="nutrition-list">
-                                    <li><strong>3-4:1 ratio:</strong> Carbs to protein</li>
-                                    <li><strong>Examples:</strong> Chocolate milk, smoothie</li>
-                                    <li><strong>Timing:</strong> Critical within 30-60 minutes</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="nutrition-card">
-                                <h4>⚖️ Daily Nutrition</h4>
-                                <ul class="nutrition-list">
-                                    <li><strong>Carbs:</strong> 5-7g per kg for moderate training</li>
-                                    <li><strong>Protein:</strong> 1.4-1.6g per kg daily</li>
-                                    <li><strong>Fats:</strong> 20-25% of total calories</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Injury Prevention -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="Injuries">Common Running Injuries & Prevention</h2>
-                        <a href="https://www.youtube.com/results?search_query=running+injury+prevention+common+injuries" target="_blank" class="youtube-icon" title="Watch Injury Prevention">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>Running injuries are preventable with proper training and recovery strategies.</p>
-                    
-                    <h4>Prevention Strategies</h4>
-                    <div class="prevention-tips">
-                        <div class="tip-item">
-                            <span class="tip-number">1</span>
-                            <p><strong>Progressive Overload:</strong> Increase weekly mileage by no more than 10%</p>
+                    <!-- Common Mistakes -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="Mistakes">Common Mistakes to Avoid</h2>
+                            <a href="https://www.youtube.com/results?search_query=common+running+mistakes"
+                                target="_blank" class="youtube-icon" title="Watch Running Mistakes">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
-                        <div class="tip-item">
-                            <span class="tip-number">2</span>
-                            <p><strong>Strength Training:</strong> 2-3x per week focusing on glutes, hamstrings, core</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">3</span>
-                            <p><strong>Flexibility Work:</strong> Dynamic stretching before, static after (10-15 min)</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">4</span>
-                            <p><strong>Proper Footwear:</strong> Get gait analyzed and choose appropriate shoes</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">5</span>
-                            <p><strong>Adequate Recovery:</strong> Include easy runs, rest days, 7-9 hours sleep</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">6</span>
-                            <p><strong>Warm-up & Cool-down:</strong> 5-10 minutes each for every run</p>
-                        </div>
-                    </div>
-                </section>
 
+                        <div class="mistakes-grid">
+                            <div class="mistake-card danger">
+                                <h5>❌ Running Too Fast</h5>
+                                <p>Most beginners run easy runs too fast. Stay conversational pace.</p>
+                            </div>
+                            <div class="mistake-card danger">
+                                <h5>❌ Long Strides</h5>
+                                <p>Overstriding causes injury. Keep steps quick and light.</p>
+                            </div>
+                            <div class="mistake-card danger">
+                                <h5>❌ No Warm-up</h5>
+                                <p>Always walk or jog slowly for 5-10 minutes first.</p>
+                            </div>
+                            <div class="mistake-card danger">
+                                <h5>❌ Wrong Shoes</h5>
+                                <p>Get properly fitted running shoes for your gait.</p>
+                            </div>
+                            <div class="mistake-card danger">
+                                <h5>❌ Too Much Too Soon</h5>
+                                <p>Don't increase distance more than 10% per week.</p>
+                            </div>
+                            <div class="mistake-card danger">
+                                <h5>❌ Ignoring Pain</h5>
+                                <p>Sharp pain is a signal to stop. Rest and recover.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 5K Training -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="5KTraining">5K Race Training (Intermediate)</h2>
+                            <a href="https://www.youtube.com/results?search_query=5k+race+training+plan" target="_blank"
+                                class="youtube-icon" title="Watch 5K Training">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="alert alert-info">For runners who can already run 3-4 km continuously. 8-week training
+                            plan to prepare for a 5K race.</p>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Total Distance</th>
+                                        <th>Long Run</th>
+                                        <th>Speed Work</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1</strong></td>
+                                        <td>15 km</td>
+                                        <td>5 km easy</td>
+                                        <td>4x 400m fast</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2</strong></td>
+                                        <td>18 km</td>
+                                        <td>6 km easy</td>
+                                        <td>5x 400m fast</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3</strong></td>
+                                        <td>20 km</td>
+                                        <td>7 km easy</td>
+                                        <td>6x 400m fast</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>4</strong></td>
+                                        <td>22 km</td>
+                                        <td>8 km easy</td>
+                                        <td>4x 800m tempo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5</strong></td>
+                                        <td>24 km</td>
+                                        <td>9 km easy</td>
+                                        <td>5x 800m tempo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>6</strong></td>
+                                        <td>20 km</td>
+                                        <td>10 km easy</td>
+                                        <td>3x 1km tempo</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>7</strong></td>
+                                        <td>20 km</td>
+                                        <td>8 km easy</td>
+                                        <td>Light intervals</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>8</strong></td>
+                                        <td>15 km</td>
+                                        <td>5 km easy</td>
+                                        <td>Race Day! 🏃</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Nutrition -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="Nutrition">Nutrition for Runners</h2>
+                            <a href="https://www.youtube.com/results?search_query=running+nutrition+pre+during+post+workout"
+                                target="_blank" class="youtube-icon" title="Watch Running Nutrition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p>Proper nutrition is crucial for running performance and recovery.</p>
+
+                        <div class="row nutrition-grid">
+                            <div class="col-md-6">
+                                <div class="nutrition-card">
+                                    <h4>🥗 Pre-Run Nutrition (30-60 min before)</h4>
+                                    <ul class="nutrition-list">
+                                        <li><strong>Short runs:</strong> Light snack - banana, granola bar</li>
+                                        <li><strong>Long runs:</strong> Carbs + protein - oatmeal with banana</li>
+                                        <li><strong>Hydration:</strong> Water 2-3 hours and 15 min before</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="nutrition-card">
+                                    <h4>🥤 During-Run (for runs over 90 min)</h4>
+                                    <ul class="nutrition-list">
+                                        <li><strong>Carbs:</strong> 30-60g per hour</li>
+                                        <li><strong>Electrolytes:</strong> Sodium for hydration</li>
+                                        <li><strong>Hydration:</strong> 400-800ml water per hour</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="nutrition-card">
+                                    <h4>🍌 Post-Run Recovery (within 30 min)</h4>
+                                    <ul class="nutrition-list">
+                                        <li><strong>3-4:1 ratio:</strong> Carbs to protein</li>
+                                        <li><strong>Examples:</strong> Chocolate milk, smoothie</li>
+                                        <li><strong>Timing:</strong> Critical within 30-60 minutes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="nutrition-card">
+                                    <h4>⚖️ Daily Nutrition</h4>
+                                    <ul class="nutrition-list">
+                                        <li><strong>Carbs:</strong> 5-7g per kg for moderate training</li>
+                                        <li><strong>Protein:</strong> 1.4-1.6g per kg daily</li>
+                                        <li><strong>Fats:</strong> 20-25% of total calories</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Injury Prevention -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="Injuries">Common Running Injuries & Prevention</h2>
+                            <a href="https://www.youtube.com/results?search_query=running+injury+prevention+common+injuries"
+                                target="_blank" class="youtube-icon" title="Watch Injury Prevention">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p>Running injuries are preventable with proper training and recovery strategies.</p>
+
+                        <h4>Prevention Strategies</h4>
+                        <div class="prevention-tips">
+                            <div class="tip-item">
+                                <span class="tip-number">1</span>
+                                <p><strong>Progressive Overload:</strong> Increase weekly mileage by no more than 10%
+                                </p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">2</span>
+                                <p><strong>Strength Training:</strong> 2-3x per week focusing on glutes, hamstrings,
+                                    core</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">3</span>
+                                <p><strong>Flexibility Work:</strong> Dynamic stretching before, static after (10-15
+                                    min)</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">4</span>
+                                <p><strong>Proper Footwear:</strong> Get gait analyzed and choose appropriate shoes</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">5</span>
+                                <p><strong>Adequate Recovery:</strong> Include easy runs, rest days, 7-9 hours sleep</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">6</span>
+                                <p><strong>Warm-up & Cool-down:</strong> 5-10 minutes each for every run</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
             </div>
+            <!-- CONTENT END -->
         </div>
-        <!-- CONTENT END -->
     </div>
-</div>
-<!-- MAIN END -->
+    <!-- MAIN END -->
 
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 
     <!-- Back to Top Anchor (CSS-driven) -->
     <a id="backToTop" href="#top" title="Back to Top">↑</a>
 
 </body>
+
 </html>

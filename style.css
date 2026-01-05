@@ -73,7 +73,6 @@ body {
     text-decoration: none;
     color: black;
     overflow: hidden;
-
     text-decoration: none;
 
     /* Slide-up animation on page load */
@@ -140,25 +139,4 @@ body {
 .box-text p {
     color: #666;
     line-height: 1.5;
-}
-
-/* Clear floats for layout */
-.clear {
-    clear: both;
-}
-
-/* Show tooltip-like tips from data-more attribute via CSS (hover to reveal) */
-.section-card ul li::after, .step-list li::after {
-    content: attr(data-more);
-    display: block;
-    color: #444;
-    margin-top: 0.4rem;
-    padding-left: 8px;
-    font-size: 0.95rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
-}
-.section-card ul li:hover::after, .step-list li:hover::after, .section-card ul li:focus-within::after, .step-list li:focus-within::after {
-    max-height: 200px;
 }
