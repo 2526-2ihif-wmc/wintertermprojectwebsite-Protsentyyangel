@@ -1,612 +1,696 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Workouts - WaveFit</title>
-    
+
     <!-- Bootstrap Framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styleForGym.css">
 </head>
+
 <body id="top">
 
-<!-- ========================================
+    <!-- ========================================
      NAVIGATION BAR
      ======================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button" data-toggle="dropdown">
-                    Workouts
-                </a>
-                <div class="dropdown-menu" aria-labelledby="workoutsDropdown">
-                    <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
-                    <a class="dropdown-item" href="wavefit-running.html">Running</a>
-                    <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
-                    <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button"
+                        data-toggle="dropdown">
+                        Workouts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="workoutsDropdown">
+                        <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
+                        <a class="dropdown-item" href="wavefit-running.html">Running</a>
+                        <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
+                        <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HERO START -->
+    <div class="page-header">
+        <h1>Gym Mastery</h1>
+        <p>Build strength, muscle, and transform your body with weights</p>
+    </div>
+    <!-- HERO END -->
+
+    <!-- MAIN START -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- SIDEBAR START -->
+            <div class="col-lg-3 col-md-4 sidebar-column">
+                <div class="sidebar-sticky">
+                    <h5 class="sidebar-title">Sections</h5>
+                    <nav class="nav flex-column sidebar-nav">
+                        <a class="nav-link" href="#GettingStarted">Getting Started</a>
+                        <a class="nav-link" href="#BeginnerFullBody">Beginner Full Body</a>
+                        <a class="nav-link" href="#PushPullLegs">Push/Pull/Legs</a>
+                        <a class="nav-link" href="#BigFive">The Big 5</a>
+                        <a class="nav-link" href="#Muscle">Building Muscle</a>
+                        <a class="nav-link" href="#RepRanges">Rep Ranges</a>
+                        <a class="nav-link" href="#Safety">Safety Tips</a>
+                        <a class="nav-link" href="#Progress">How to Progress</a>
+                    </nav>
                 </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- NAVBAR END -->
-
-<!-- HERO START -->
-<div class="page-header">
-    <h1>Gym Mastery</h1>
-    <p>Build strength, muscle, and transform your body with weights</p>
-</div>
-<!-- HERO END -->
-
-<!-- MAIN START -->
-<div class="container-fluid">
-    <div class="row">
-        <!-- SIDEBAR START -->
-        <div class="col-lg-3 col-md-4 sidebar-column">
-            <div class="sidebar-sticky">
-                <h5 class="sidebar-title">Sections</h5>
-                <nav class="nav flex-column sidebar-nav">
-                    <a class="nav-link" href="#GettingStarted">Getting Started</a>
-                    <a class="nav-link" href="#BeginnerFullBody">Beginner Full Body</a>
-                    <a class="nav-link" href="#PushPullLegs">Push/Pull/Legs</a>
-                    <a class="nav-link" href="#BigFive">The Big 5</a>
-                    <a class="nav-link" href="#Muscle">Building Muscle</a>
-                    <a class="nav-link" href="#RepRanges">Rep Ranges</a>
-                    <a class="nav-link" href="#Safety">Safety Tips</a>
-                    <a class="nav-link" href="#Progress">How to Progress</a>
-                </nav>
             </div>
-        </div>
-        <!-- SIDEBAR END -->
+            <!-- SIDEBAR END -->
 
-        <!-- CONTENT START -->
-        <div class="col-lg-9 col-md-8">
-            <div class="content-wrapper">
-                
-                <!-- Getting Started -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="GettingStarted">Getting Started at the Gym</h2>
-                        <a href="https://www.youtube.com/results?search_query=gym+workout+for+beginners" target="_blank" class="youtube-icon" title="Watch Gym Guide">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>Weight training builds muscle, increases strength, boosts metabolism, and improves overall health. Whether you're a complete beginner or returning to the gym, this guide will help you succeed.</p>
-                    
-                    <div class="benefits-grid">
-                        <div class="benefit-item">
-                            <h4>💪 Strength</h4>
-                            <ul>
-                                <li data-more="Tip: Prioritise form and compound lifts; increase load gradually.">Increase muscle power</li>
-                                <li data-more="Tip: Strength gains help with daily activities like carrying groceries.">Improve daily functionality</li>
-                                <li data-more="Tip: Keep adding weight or reps every week or two for continued growth.">Progressive overload</li>
-                                <li data-more="Tip: Squats, deadlifts, and presses should be your main lifts.">Compound movements first</li>
-                            </ul>
-                        </div>
-                        <div class="benefit-item">
-                            <h4>🏋️ Muscle Growth</h4>
-                            <ul>
-                                <li data-more="Tip: Use 8-12 rep ranges with moderate weight for best hypertrophy.">Hypertrophy training</li>
-                                <li data-more="Tip: 8-12 reps builds muscle; 3-6 reps builds strength; 15+ reps builds endurance.">Proper rep ranges</li>
-                                <li data-more="Tip: Eat 1.6-2.2g protein per kg daily to support muscle growth.">Adequate nutrition</li>
-                                <li data-more="Tip: Train 3-5 days weekly with rest days for recovery and growth.">Consistency matters</li>
-                            </ul>
-                        </div>
-                        <div class="benefit-item">
-                            <h4>🔥 Metabolism</h4>
-                            <ul>
-                                <li data-more="Tip: Strength training burns 300-500 extra calories post-workout.">Increased calorie burn</li>
-                                <li data-more="Tip: Muscle tissue looks better than fat at the same weight—scale doesn't tell the whole story.">Improved body composition</li>
-                                <li data-more="Tip: Losing weight takes weeks; building muscle-to-fat ratio takes months.">Long-term results</li>
-                                <li data-more="Tip: Your metabolism increases as you gain muscle—permanent changes happen.">Metabolic adaptation</li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- CONTENT START -->
+            <div class="col-lg-9 col-md-8">
+                <div class="content-wrapper">
 
-                    <h4 class="mt-4">Basic Rules for Success</h4>
-                    <div class="form-checklist">
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Progressive Overload</h5>
-                                <p>Gradually increase weight or reps over time to keep challenging muscles</p>
-                            </div>
+                    <!-- Getting Started -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="GettingStarted">Getting Started at the Gym</h2>
+                            <a href="https://www.youtube.com/results?search_query=gym+workout+for+beginners"
+                                target="_blank" class="youtube-icon" title="Watch Gym Guide">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Proper Form</h5>
-                                <p>Quality movement over heavy weight prevents injury</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Adequate Rest</h5>
-                                <p>Muscles grow during rest, not during workouts</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Consistency</h5>
-                                <p>Regular training is more important than intensity</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Proper Nutrition</h5>
-                                <p>Eat 1.6-2g protein per kg of bodyweight daily</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                        <p>Weight training builds muscle, increases strength, boosts metabolism, and improves overall
+                            health. Whether you're a complete beginner or returning to the gym, this guide will help you
+                            succeed.</p>
 
-                <!-- Beginner Full Body -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="BeginnerFullBody">Beginner Full Body Workout</h2>
-                        <a href="https://www.youtube.com/results?search_query=full+body+workout+beginner+gym" target="_blank" class="youtube-icon" title="Watch Full Body Workout">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p class="lead">3 days per week: Monday, Wednesday, Friday. Rest 1 day between sessions for recovery.</p>
-                    
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th>Exercise</th>
-                                    <th>Sets</th>
-                                    <th>Reps</th>
-                                    <th>Rest</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Squats</strong></td>
-                                    <td>3</td>
-                                    <td>8-10</td>
-                                    <td>2-3 min</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Bench Press</strong></td>
-                                    <td>3</td>
-                                    <td>8-10</td>
-                                    <td>2-3 min</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Barbell Row</strong></td>
-                                    <td>3</td>
-                                    <td>8-10</td>
-                                    <td>2 min</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Overhead Press</strong></td>
-                                    <td>3</td>
-                                    <td>8-10</td>
-                                    <td>2 min</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Romanian Deadlift</strong></td>
-                                    <td>3</td>
-                                    <td>10-12</td>
-                                    <td>2 min</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Lat Pulldown</strong></td>
-                                    <td>3</td>
-                                    <td>10-12</td>
-                                    <td>90 sec</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Bicep Curls</strong></td>
-                                    <td>2</td>
-                                    <td>12-15</td>
-                                    <td>60 sec</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Tricep Extensions</strong></td>
-                                    <td>2</td>
-                                    <td>12-15</td>
-                                    <td>60 sec</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Plank</strong></td>
-                                    <td>3</td>
-                                    <td>30-60 sec</td>
-                                    <td>60 sec</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="alert alert-info mt-3">
-                        <strong>💡 Pro Tip:</strong> Start with weights you can control for 8 reps with good form. Focus on the mind-muscle connection, not just moving weight.
-                    </div>
-                </section>
-
-                <!-- Push Pull Legs -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="PushPullLegs">Intermediate: Push/Pull/Legs Split</h2>
-                        <a href="https://www.youtube.com/results?search_query=push+pull+legs+workout" target="_blank" class="youtube-icon" title="Watch PPL Split">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p class="lead">6 days per week for intermediate lifters seeking muscle growth and strength.</p>
-
-                    <div class="row running-types-grid">
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>🔨 Push Days (Chest, Shoulders, Triceps)</h4>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <h4>💪 Strength</h4>
                                 <ul>
-                                    <li data-more="Tip: Use a spotter and control the eccentric portion.">Bench Press: 4x6-8</li>
-                                    <li>Incline Dumbbell Press: 3x8-10</li>
-                                    <li>Overhead Press: 3x8-10</li>
-                                    <li>Lateral Raises: 3x12-15</li>
-                                    <li>Tricep Dips: 3x8-12</li>
+                                    <li data-more="Tip: Prioritise form and compound lifts; increase load gradually.">
+                                        Increase muscle power</li>
+                                    <li
+                                        data-more="Tip: Strength gains help with daily activities like carrying groceries.">
+                                        Improve daily functionality</li>
+                                    <li
+                                        data-more="Tip: Keep adding weight or reps every week or two for continued growth.">
+                                        Progressive overload</li>
+                                    <li data-more="Tip: Squats, deadlifts, and presses should be your main lifts.">
+                                        Compound movements first</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>🔗 Pull Days (Back, Biceps)</h4>
+                            <div class="benefit-item">
+                                <h4>🏋️ Muscle Growth</h4>
                                 <ul>
-                                    <li>Deadlifts: 4x5-6</li>
-                                    <li>Pull-ups: 3x6-10</li>
-                                    <li>Barbell Rows: 3x8-10</li>
-                                    <li>Face Pulls: 3x12-15</li>
-                                    <li>Barbell Curls: 3x8-12</li>
+                                    <li data-more="Tip: Use 8-12 rep ranges with moderate weight for best hypertrophy.">
+                                        Hypertrophy training</li>
+                                    <li
+                                        data-more="Tip: 8-12 reps builds muscle; 3-6 reps builds strength; 15+ reps builds endurance.">
+                                        Proper rep ranges</li>
+                                    <li data-more="Tip: Eat 1.6-2.2g protein per kg daily to support muscle growth.">
+                                        Adequate nutrition</li>
+                                    <li data-more="Tip: Train 3-5 days weekly with rest days for recovery and growth.">
+                                        Consistency matters</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>🦵 Leg Days</h4>
+                            <div class="benefit-item">
+                                <h4>🔥 Metabolism</h4>
                                 <ul>
-                                    <li>Squats: 4x6-8</li>
-                                    <li>Romanian Deadlifts: 3x8-10</li>
-                                    <li>Leg Press: 3x10-12</li>
-                                    <li>Leg Curls: 3x10-12</li>
-                                    <li>Calf Raises: 4x15-20</li>
+                                    <li data-more="Tip: Strength training burns 300-500 extra calories post-workout.">
+                                        Increased calorie burn</li>
+                                    <li
+                                        data-more="Tip: Muscle tissue looks better than fat at the same weight—scale doesn't tell the whole story.">
+                                        Improved body composition</li>
+                                    <li
+                                        data-more="Tip: Losing weight takes weeks; building muscle-to-fat ratio takes months.">
+                                        Long-term results</li>
+                                    <li
+                                        data-more="Tip: Your metabolism increases as you gain muscle—permanent changes happen.">
+                                        Metabolic adaptation</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="type-card">
-                                <h4>📅 Schedule</h4>
-                                <ul>
-                                    <li data-more="Tip: Push day focuses on chest, shoulders, and triceps."><strong>Monday:</strong> Push</li>
-                                    <li data-more="Tip: Pull day focuses on back and biceps."><strong>Tuesday:</strong> Pull</li>
-                                    <li data-more="Tip: Leg day includes quads, hamstrings, and glutes."><strong>Wednesday:</strong> Legs</li>
-                                    <li data-more="Tip: Repeat the three-day cycle to maximize recovery time."><strong>Thursday:</strong> Push</li>
-                                    <li data-more="Tip: Second pull day gives back and biceps extra volume."><strong>Friday:</strong> Pull</li>
-                                    <li data-more="Tip: Second leg day builds leg size and strength faster."><strong>Saturday:</strong> Legs</li>
-                                    <li data-more="Tip: Full rest day allows complete physical and mental recovery."><strong>Sunday:</strong> Rest</li>
-                                </ul>
+
+                        <h4 class="mt-4">Basic Rules for Success</h4>
+                        <div class="form-checklist">
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Progressive Overload</h5>
+                                    <p>Gradually increase weight or reps over time to keep challenging muscles</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Proper Form</h5>
+                                    <p>Quality movement over heavy weight prevents injury</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Adequate Rest</h5>
+                                    <p>Muscles grow during rest, not during workouts</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Consistency</h5>
+                                    <p>Regular training is more important than intensity</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Proper Nutrition</h5>
+                                    <p>Eat 1.6-2g protein per kg of bodyweight daily</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- The Big 5 -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="BigFive">The Big 5 Compound Exercises</h2>
-                        <a href="https://www.youtube.com/results?search_query=the+big+5+compound+exercises+gym" target="_blank" class="youtube-icon" title="Watch Big 5 Exercises">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>These fundamental movements should form the base of every training program. They build overall strength, functional fitness, and maximum muscle growth.</p>
-                    
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th>Exercise</th>
-                                    <th>Primary Muscles</th>
-                                    <th>Benefits</th>
-                                    <th>Best For</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Squat</strong></td>
-                                    <td>Quads, Glutes, Core</td>
-                                    <td>Leg strength, Muscle growth</td>
-                                    <td>Hypertrophy: 6-12 reps</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Deadlift</strong></td>
-                                    <td>Back, Glutes, Legs</td>
-                                    <td>Overall strength, Posterior chain</td>
-                                    <td>Strength: 3-6 reps</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Bench Press</strong></td>
-                                    <td>Chest, Shoulders, Triceps</td>
-                                    <td>Upper body pushing power</td>
-                                    <td>Hypertrophy: 6-10 reps</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Overhead Press</strong></td>
-                                    <td>Shoulders, Triceps, Core</td>
-                                    <td>Shoulder strength, Stability</td>
-                                    <td>Strength: 5-8 reps</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Barbell Row</strong></td>
-                                    <td>Back, Biceps, Core</td>
-                                    <td>Upper body pulling power</td>
-                                    <td>Hypertrophy: 6-10 reps</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+                    <!-- Beginner Full Body -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="BeginnerFullBody">Beginner Full Body Workout</h2>
+                            <a href="https://www.youtube.com/results?search_query=full+body+workout+beginner+gym"
+                                target="_blank" class="youtube-icon" title="Watch Full Body Workout">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="lead">3 days per week: Monday, Wednesday, Friday. Rest 1 day between sessions for
+                            recovery.</p>
 
-                <!-- Building Muscle -->
-                <section class="section-card">
-                    <div class="heading-wrapper">
-                        <h2 id="Muscle">Building Muscle (Hypertrophy)</h2>
-                        <a href="https://www.youtube.com/results?search_query=muscle+building+hypertrophy+workout" target="_blank" class="youtube-icon" title="Watch Hypertrophy Training">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <p>Hypertrophy training focuses on muscle growth through mechanical tension, muscle damage, and metabolic stress. This is ideal for aesthetic goals and building size.</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Exercise</th>
+                                        <th>Sets</th>
+                                        <th>Reps</th>
+                                        <th>Rest</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Squats</strong></td>
+                                        <td>3</td>
+                                        <td>8-10</td>
+                                        <td>2-3 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bench Press</strong></td>
+                                        <td>3</td>
+                                        <td>8-10</td>
+                                        <td>2-3 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Barbell Row</strong></td>
+                                        <td>3</td>
+                                        <td>8-10</td>
+                                        <td>2 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Overhead Press</strong></td>
+                                        <td>3</td>
+                                        <td>8-10</td>
+                                        <td>2 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Romanian Deadlift</strong></td>
+                                        <td>3</td>
+                                        <td>10-12</td>
+                                        <td>2 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Lat Pulldown</strong></td>
+                                        <td>3</td>
+                                        <td>10-12</td>
+                                        <td>90 sec</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bicep Curls</strong></td>
+                                        <td>2</td>
+                                        <td>12-15</td>
+                                        <td>60 sec</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tricep Extensions</strong></td>
+                                        <td>2</td>
+                                        <td>12-15</td>
+                                        <td>60 sec</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Plank</strong></td>
+                                        <td>3</td>
+                                        <td>30-60 sec</td>
+                                        <td>60 sec</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                    <h4>Key Hypertrophy Principles</h4>
-                    <div class="mistakes-grid">
-                        <div class="mistake-card" style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
-                            <h5 style="color: #667eea;">🎯 Rep Range</h5>
-                            <p style="color: #666;">8-12 reps per set is optimal for muscle growth</p>
+                        <div class="alert alert-info mt-3">
+                            <strong>💡 Pro Tip:</strong> Start with weights you can control for 8 reps with good form.
+                            Focus on the mind-muscle connection, not just moving weight.
                         </div>
-                        <div class="mistake-card" style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
-                            <h5 style="color: #667eea;">⏱️ Time Under Tension</h5>
-                            <p style="color: #666;">40-60 seconds per set maximizes muscle growth</p>
-                        </div>
-                        <div class="mistake-card" style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
-                            <h5 style="color: #667eea;">📊 Volume</h5>
-                            <p style="color: #666;">10-20 sets per muscle group per week optimal</p>
-                        </div>
-                        <div class="mistake-card" style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
-                            <h5 style="color: #667eea;">🔄 Frequency</h5>
-                            <p style="color: #666;">Hit each muscle 2-3 times per week for growth</p>
-                        </div>
-                    </div>
+                    </section>
 
-                    <h4 class="mt-4">Nutrition for Muscle Growth</h4>
-                    <div class="row nutrition-grid">
-                        <div class="col-md-6">
-                            <div class="nutrition-card">
-                                <h5>🥗 Macronutrients</h5>
-                                <ul class="nutrition-list">
-                                    <li data-more="Tip: Critical for muscle repair and growth post-workout."><strong>Protein:</strong> 1.6-2.2g per kg daily</li>
-                                    <li data-more="Tip: Fuel for intense workouts and muscle glycogen recovery."><strong>Carbs:</strong> 4-7g per kg for energy</li>
-                                    <li data-more="Tip: Essential for hormone production and joint health."><strong>Fats:</strong> 0.5-1.5g per kg for hormones</li>
-                                </ul>
+                    <!-- Push Pull Legs -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="PushPullLegs">Intermediate: Push/Pull/Legs Split</h2>
+                            <a href="https://www.youtube.com/results?search_query=push+pull+legs+workout"
+                                target="_blank" class="youtube-icon" title="Watch PPL Split">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="lead">6 days per week for intermediate lifters seeking muscle growth and strength.</p>
+
+                        <div class="row running-types-grid">
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>🔨 Push Days (Chest, Shoulders, Triceps)</h4>
+                                    <ul>
+                                        <li data-more="Tip: Use a spotter and control the eccentric portion.">Bench
+                                            Press: 4x6-8</li>
+                                        <li>Incline Dumbbell Press: 3x8-10</li>
+                                        <li>Overhead Press: 3x8-10</li>
+                                        <li>Lateral Raises: 3x12-15</li>
+                                        <li>Tricep Dips: 3x8-12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>🔗 Pull Days (Back, Biceps)</h4>
+                                    <ul>
+                                        <li>Deadlifts: 4x5-6</li>
+                                        <li>Pull-ups: 3x6-10</li>
+                                        <li>Barbell Rows: 3x8-10</li>
+                                        <li>Face Pulls: 3x12-15</li>
+                                        <li>Barbell Curls: 3x8-12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>🦵 Leg Days</h4>
+                                    <ul>
+                                        <li>Squats: 4x6-8</li>
+                                        <li>Romanian Deadlifts: 3x8-10</li>
+                                        <li>Leg Press: 3x10-12</li>
+                                        <li>Leg Curls: 3x10-12</li>
+                                        <li>Calf Raises: 4x15-20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="type-card">
+                                    <h4>📅 Schedule</h4>
+                                    <ul>
+                                        <li data-more="Tip: Push day focuses on chest, shoulders, and triceps.">
+                                            <strong>Monday:</strong> Push
+                                        </li>
+                                        <li data-more="Tip: Pull day focuses on back and biceps.">
+                                            <strong>Tuesday:</strong> Pull
+                                        </li>
+                                        <li data-more="Tip: Leg day includes quads, hamstrings, and glutes.">
+                                            <strong>Wednesday:</strong> Legs
+                                        </li>
+                                        <li data-more="Tip: Repeat the three-day cycle to maximize recovery time.">
+                                            <strong>Thursday:</strong> Push
+                                        </li>
+                                        <li data-more="Tip: Second pull day gives back and biceps extra volume.">
+                                            <strong>Friday:</strong> Pull
+                                        </li>
+                                        <li data-more="Tip: Second leg day builds leg size and strength faster.">
+                                            <strong>Saturday:</strong> Legs
+                                        </li>
+                                        <li
+                                            data-more="Tip: Full rest day allows complete physical and mental recovery.">
+                                            <strong>Sunday:</strong> Rest
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="nutrition-card">
-                                <h5>📈 Calorie Strategy</h5>
-                                <ul class="nutrition-list">
-                                    <li data-more="Tip: 300-500 extra calories daily supports steady muscle gain without excessive fat."><strong>Surplus:</strong> 300-500 cal above maintenance</li>
-                                    <li data-more="Tip: Eat carbs and protein right after training for best recovery."><strong>Timing:</strong> Protein + carbs post-workout</li>
-                                    <li data-more="Tip: Eating the same calories daily removes guesswork and improves results."><strong>Consistency:</strong> Same calories daily</li>
-                                </ul>
+                    </section>
+
+                    <!-- The Big 5 -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="BigFive">The Big 5 Compound Exercises</h2>
+                            <a href="https://www.youtube.com/results?search_query=the+big+5+compound+exercises+gym"
+                                target="_blank" class="youtube-icon" title="Watch Big 5 Exercises">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p>These fundamental movements should form the base of every training program. They build
+                            overall strength, functional fitness, and maximum muscle growth.</p>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Exercise</th>
+                                        <th>Primary Muscles</th>
+                                        <th>Benefits</th>
+                                        <th>Best For</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Squat</strong></td>
+                                        <td>Quads, Glutes, Core</td>
+                                        <td>Leg strength, Muscle growth</td>
+                                        <td>Hypertrophy: 6-12 reps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Deadlift</strong></td>
+                                        <td>Back, Glutes, Legs</td>
+                                        <td>Overall strength, Posterior chain</td>
+                                        <td>Strength: 3-6 reps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bench Press</strong></td>
+                                        <td>Chest, Shoulders, Triceps</td>
+                                        <td>Upper body pushing power</td>
+                                        <td>Hypertrophy: 6-10 reps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Overhead Press</strong></td>
+                                        <td>Shoulders, Triceps, Core</td>
+                                        <td>Shoulder strength, Stability</td>
+                                        <td>Strength: 5-8 reps</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Barbell Row</strong></td>
+                                        <td>Back, Biceps, Core</td>
+                                        <td>Upper body pulling power</td>
+                                        <td>Hypertrophy: 6-10 reps</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Building Muscle -->
+                    <section class="section-card">
+                        <div class="heading-wrapper">
+                            <h2 id="Muscle">Building Muscle (Hypertrophy)</h2>
+                            <a href="https://www.youtube.com/results?search_query=muscle+building+hypertrophy+workout"
+                                target="_blank" class="youtube-icon" title="Watch Hypertrophy Training">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <p>Hypertrophy training focuses on muscle growth through mechanical tension, muscle damage, and
+                            metabolic stress. This is ideal for aesthetic goals and building size.</p>
+
+                        <h4>Key Hypertrophy Principles</h4>
+                        <div class="mistakes-grid">
+                            <div class="mistake-card"
+                                style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
+                                <h5 style="color: #667eea;">🎯 Rep Range</h5>
+                                <p style="color: #666;">8-12 reps per set is optimal for muscle growth</p>
+                            </div>
+                            <div class="mistake-card"
+                                style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
+                                <h5 style="color: #667eea;">⏱️ Time Under Tension</h5>
+                                <p style="color: #666;">40-60 seconds per set maximizes muscle growth</p>
+                            </div>
+                            <div class="mistake-card"
+                                style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
+                                <h5 style="color: #667eea;">📊 Volume</h5>
+                                <p style="color: #666;">10-20 sets per muscle group per week optimal</p>
+                            </div>
+                            <div class="mistake-card"
+                                style="border-left-color: #667eea; border-color: #e0e6ff; background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);">
+                                <h5 style="color: #667eea;">🔄 Frequency</h5>
+                                <p style="color: #666;">Hit each muscle 2-3 times per week for growth</p>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                <!-- Rep Ranges -->
-                <section class="section-card">
-                    <div class="section-header">
-                        <h2 id="RepRanges">Rep Ranges for Different Goals</h2>
-                    </div>
-                    <p>Different rep ranges serve different purposes. Understanding these helps you train specifically for your goals.</p>
-                    
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th>Goal</th>
-                                    <th>Rep Range</th>
-                                    <th>Sets</th>
-                                    <th>Rest Period</th>
-                                    <th>Benefits</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Strength</strong></td>
-                                    <td>1-5 reps</td>
-                                    <td>3-6 sets</td>
-                                    <td>3-5 min</td>
-                                    <td>Maximum force production</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Muscle Growth</strong></td>
-                                    <td>6-12 reps</td>
-                                    <td>3-5 sets</td>
-                                    <td>1-2 min</td>
-                                    <td>Optimal hypertrophy stimulus</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Endurance</strong></td>
-                                    <td>12-20+ reps</td>
-                                    <td>2-4 sets</td>
-                                    <td>30-60 sec</td>
-                                    <td>Muscular endurance, Fatigue</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <!-- Safety Tips -->
-                <section class="section-card">
-                    <div class="section-header">
-                        <h2 id="Safety">Safety Tips & Gym Etiquette</h2>
-                    </div>
-                    
-                    <h4>Critical Safety Rules</h4>
-                    <div class="prevention-tips">
-                        <div class="tip-item">
-                            <span class="tip-number">1</span>
-                            <p><strong>Always Warm Up:</strong> 5-10 minutes cardio and dynamic stretching before lifting</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">2</span>
-                            <p><strong>Use a Spotter:</strong> Have someone watch you for heavy compound lifts</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">3</span>
-                            <p><strong>Start Light:</strong> Learn proper form before adding significant weight</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">4</span>
-                            <p><strong>Listen to Pain:</strong> Stop immediately if you feel sharp or unusual pain</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">5</span>
-                            <p><strong>Stay Hydrated:</strong> Drink water throughout your workout session</p>
-                        </div>
-                        <div class="tip-item">
-                            <span class="tip-number">6</span>
-                            <p><strong>Cool Down & Stretch:</strong> 5-10 minutes of static stretching post-workout</p>
-                        </div>
-                    </div>
-
-                    <h4 class="mt-4">Gym Etiquette</h4>
-                    <ul>
-                        <li data-more="Tip: Use a towel and disinfectant spray—gyms have lots of bacteria."><strong>Wipe Equipment:</strong> Clean machines and benches after use</li>
-                        <li data-more="Tip: Leaving weights out is disrespectful and creates a mess."><strong>Re-rack Weights:</strong> Always return weights to their proper place</li>
-                        <li data-more="Tip: Don't hog the bench or machine—share it between sets."><strong>Share Equipment:</strong> Allow others to use equipment between sets</li>
-                        <li data-more="Tip: Everyone is focused on their workout—keep noise and chatter minimal."><strong>No Phone Calls:</strong> Keep conversations quiet and brief</li>
-                        <li data-more="Tip: Personal space during workouts prevents injury and shows respect."><strong>Respect Space:</strong> Don't stand too close or interrupt workouts</li>
-                        <li data-more="Tip: Dropping damages equipment and annoys other gym members."><strong>Don't Drop Weights:</strong> Lower weights controlled (except for deadlifts)</li>
-                    </ul>
-                </section>
-
-                <!-- How to Progress -->
-                <section class="section-card">
-                    <div class="section-header">
-                        <h2 id="Progress">How to Progress & Get Results</h2>
-                    </div>
-                    <p>Progressive overload is the key to continuous improvement. Here's how to structure your progression:</p>
-                    
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th>Training Phase</th>
-                                    <th>Duration</th>
-                                    <th>Primary Strategy</th>
-                                    <th>Example (Bench Press)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Foundation</strong></td>
-                                    <td>Weeks 1-4</td>
-                                    <td>Learn proper form and technique</td>
-                                    <td>40kg x 3x8 - Focus on control</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Rep Progression</strong></td>
-                                    <td>Weeks 5-8</td>
-                                    <td>Add reps before adding weight</td>
-                                    <td>40kg: 3x8 → 3x10 → 3x12</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Weight Progression</strong></td>
-                                    <td>Weeks 9-12</td>
-                                    <td>Increase weight, restart rep count</td>
-                                    <td>45kg: 3x8 → 3x10 → 3x12</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Deload</strong></td>
-                                    <td>Week 13</td>
-                                    <td>Reduce volume for recovery</td>
-                                    <td>40kg x 3x6 - Light week</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Repeat Cycle</strong></td>
-                                    <td>Week 14+</td>
-                                    <td>Restart with higher baseline</td>
-                                    <td>45kg x 3x8 - Start of new cycle</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h4 class="mt-4">Tracking Your Progress</h4>
-                    <div class="form-checklist">
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Keep a Workout Log</h5>
-                                <p>Record weight, sets, reps, and how you felt for every exercise</p>
+                        <h4 class="mt-4">Nutrition for Muscle Growth</h4>
+                        <div class="row nutrition-grid">
+                            <div class="col-md-6">
+                                <div class="nutrition-card">
+                                    <h5>🥗 Macronutrients</h5>
+                                    <ul class="nutrition-list">
+                                        <li data-more="Tip: Critical for muscle repair and growth post-workout.">
+                                            <strong>Protein:</strong> 1.6-2.2g per kg daily
+                                        </li>
+                                        <li data-more="Tip: Fuel for intense workouts and muscle glycogen recovery.">
+                                            <strong>Carbs:</strong> 4-7g per kg for energy
+                                        </li>
+                                        <li data-more="Tip: Essential for hormone production and joint health.">
+                                            <strong>Fats:</strong> 0.5-1.5g per kg for hormones
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="nutrition-card">
+                                    <h5>📈 Calorie Strategy</h5>
+                                    <ul class="nutrition-list">
+                                        <li
+                                            data-more="Tip: 300-500 extra calories daily supports steady muscle gain without excessive fat.">
+                                            <strong>Surplus:</strong> 300-500 cal above maintenance
+                                        </li>
+                                        <li
+                                            data-more="Tip: Eat carbs and protein right after training for best recovery.">
+                                            <strong>Timing:</strong> Protein + carbs post-workout
+                                        </li>
+                                        <li
+                                            data-more="Tip: Eating the same calories daily removes guesswork and improves results.">
+                                            <strong>Consistency:</strong> Same calories daily
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Take Progress Photos</h5>
-                                <p>Take photos monthly to track physical changes you might not see daily</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Track Bodyweight</h5>
-                                <p>Weigh yourself 2-3 times per week and track the average</p>
-                            </div>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <h5>Measure Strength Gains</h5>
-                                <p>Focus on increasing weight or reps - this is the best progress indicator</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
+                    <!-- Rep Ranges -->
+                    <section class="section-card">
+                        <div class="section-header">
+                            <h2 id="RepRanges">Rep Ranges for Different Goals</h2>
+                        </div>
+                        <p>Different rep ranges serve different purposes. Understanding these helps you train
+                            specifically for your goals.</p>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Goal</th>
+                                        <th>Rep Range</th>
+                                        <th>Sets</th>
+                                        <th>Rest Period</th>
+                                        <th>Benefits</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Strength</strong></td>
+                                        <td>1-5 reps</td>
+                                        <td>3-6 sets</td>
+                                        <td>3-5 min</td>
+                                        <td>Maximum force production</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Muscle Growth</strong></td>
+                                        <td>6-12 reps</td>
+                                        <td>3-5 sets</td>
+                                        <td>1-2 min</td>
+                                        <td>Optimal hypertrophy stimulus</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Endurance</strong></td>
+                                        <td>12-20+ reps</td>
+                                        <td>2-4 sets</td>
+                                        <td>30-60 sec</td>
+                                        <td>Muscular endurance, Fatigue</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Safety Tips -->
+                    <section class="section-card">
+                        <div class="section-header">
+                            <h2 id="Safety">Safety Tips & Gym Etiquette</h2>
+                        </div>
+
+                        <h4>Critical Safety Rules</h4>
+                        <div class="prevention-tips">
+                            <div class="tip-item">
+                                <span class="tip-number">1</span>
+                                <p><strong>Always Warm Up:</strong> 5-10 minutes cardio and dynamic stretching before
+                                    lifting</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">2</span>
+                                <p><strong>Use a Spotter:</strong> Have someone watch you for heavy compound lifts</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">3</span>
+                                <p><strong>Start Light:</strong> Learn proper form before adding significant weight</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">4</span>
+                                <p><strong>Listen to Pain:</strong> Stop immediately if you feel sharp or unusual pain
+                                </p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">5</span>
+                                <p><strong>Stay Hydrated:</strong> Drink water throughout your workout session</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-number">6</span>
+                                <p><strong>Cool Down & Stretch:</strong> 5-10 minutes of static stretching post-workout
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-4">Gym Etiquette</h4>
+                        <ul>
+                            <li data-more="Tip: Use a towel and disinfectant spray—gyms have lots of bacteria.">
+                                <strong>Wipe Equipment:</strong> Clean machines and benches after use
+                            </li>
+                            <li data-more="Tip: Leaving weights out is disrespectful and creates a mess.">
+                                <strong>Re-rack Weights:</strong> Always return weights to their proper place
+                            </li>
+                            <li data-more="Tip: Don't hog the bench or machine—share it between sets."><strong>Share
+                                    Equipment:</strong> Allow others to use equipment between sets</li>
+                            <li data-more="Tip: Everyone is focused on their workout—keep noise and chatter minimal.">
+                                <strong>No Phone Calls:</strong> Keep conversations quiet and brief
+                            </li>
+                            <li data-more="Tip: Personal space during workouts prevents injury and shows respect.">
+                                <strong>Respect Space:</strong> Don't stand too close or interrupt workouts
+                            </li>
+                            <li data-more="Tip: Dropping damages equipment and annoys other gym members."><strong>Don't
+                                    Drop Weights:</strong> Lower weights controlled (except for deadlifts)</li>
+                        </ul>
+                    </section>
+
+                    <!-- How to Progress -->
+                    <section class="section-card">
+                        <div class="section-header">
+                            <h2 id="Progress">How to Progress & Get Results</h2>
+                        </div>
+                        <p>Progressive overload is the key to continuous improvement. Here's how to structure your
+                            progression:</p>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Training Phase</th>
+                                        <th>Duration</th>
+                                        <th>Primary Strategy</th>
+                                        <th>Example (Bench Press)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Foundation</strong></td>
+                                        <td>Weeks 1-4</td>
+                                        <td>Learn proper form and technique</td>
+                                        <td>40kg x 3x8 - Focus on control</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rep Progression</strong></td>
+                                        <td>Weeks 5-8</td>
+                                        <td>Add reps before adding weight</td>
+                                        <td>40kg: 3x8 → 3x10 → 3x12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Weight Progression</strong></td>
+                                        <td>Weeks 9-12</td>
+                                        <td>Increase weight, restart rep count</td>
+                                        <td>45kg: 3x8 → 3x10 → 3x12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Deload</strong></td>
+                                        <td>Week 13</td>
+                                        <td>Reduce volume for recovery</td>
+                                        <td>40kg x 3x6 - Light week</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Repeat Cycle</strong></td>
+                                        <td>Week 14+</td>
+                                        <td>Restart with higher baseline</td>
+                                        <td>45kg x 3x8 - Start of new cycle</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4 class="mt-4">Tracking Your Progress</h4>
+                        <div class="form-checklist">
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Keep a Workout Log</h5>
+                                    <p>Record weight, sets, reps, and how you felt for every exercise</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Take Progress Photos</h5>
+                                    <p>Take photos monthly to track physical changes you might not see daily</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Track Bodyweight</h5>
+                                    <p>Weigh yourself 2-3 times per week and track the average</p>
+                                </div>
+                            </div>
+                            <div class="checklist-item">
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <h5>Measure Strength Gains</h5>
+                                    <p>Focus on increasing weight or reps - this is the best progress indicator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
             </div>
+            <!-- CONTENT END -->
         </div>
-        <!-- CONTENT END -->
     </div>
-</div>
-<!-- MAIN END -->
+    <!-- MAIN END -->
 
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 
     <!-- Back to Top Anchor (CSS-driven) -->
     <a id="backToTop" href="#top" title="Back to Top">↑</a>
 
 </body>
+
 </html>
