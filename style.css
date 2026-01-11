@@ -1,11 +1,11 @@
-
 /* Body - Main page background and font */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e9eefc 0%, #d6dcff 100%);
     color: #333;
-    line-height: 1.6;   
+    line-height: 1.6;
 }
+
 .nav-link {
     color: #555 !important;
     font-weight: 500;
@@ -29,6 +29,7 @@ body {
     color: #667eea;
     padding-left: 2rem;
 }
+
 /* Hero background image with overlay */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200');
@@ -128,11 +129,12 @@ body {
     }
 }
 
-/* Box hover effect - lift up on mouse over */
+/* Box hover effect */
 .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-decoration:none;
+    text-decoration: none;
+    transform: translateY(-5px) scale(2.01);
 }
 
 /* Box image styling */

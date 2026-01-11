@@ -107,7 +107,7 @@ body {
 
 .main-info:hover {
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
-    transform: translateY(-5px) scal e(1.01);
+    transform: translateY(-5px) scale(1.01);
     border-left-color: #764ba2;
 }
 
