@@ -5,6 +5,34 @@ body {
     line-height: 1.6;
 }
 
+/* Navigation Bar */
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #667eea !important;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f2ff;
+    color: #667eea;
+    padding-left: 2rem;
+}
+
+
+
 /* Page Header */
 .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
@@ -79,7 +107,7 @@ body {
 
 .main-info:hover {
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
-    transform: translateY(-5px) scal    e(1.01);
+    transform: translateY(-5px) scal e(1.01);
     border-left-color: #764ba2;
 }
 

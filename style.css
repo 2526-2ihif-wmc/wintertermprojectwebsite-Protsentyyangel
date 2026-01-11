@@ -6,11 +6,29 @@ body {
     color: #333;
     line-height: 1.6;   
 }
+.nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
 
-/* Navbar - Navigation bar styling */
+.nav-link:hover,
+.nav-link.active {
+    color: #667eea !important;
+}
 
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
 
-
+.dropdown-item:hover {
+    background-color: #f0f2ff;
+    color: #667eea;
+    padding-left: 2rem;
+}
 /* Hero background image with overlay */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200');

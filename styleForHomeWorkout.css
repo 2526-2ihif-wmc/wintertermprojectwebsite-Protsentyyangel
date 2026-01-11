@@ -25,37 +25,28 @@ html {
    NAVIGATION BAR
    ========================================== */
 /* Navbar container styling */
-.navbar {
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.15);
-    padding: 1rem 0;
-    background: white;
-    border-bottom: 2px solid #f0f2ff;
-}
-
-/* Brand/Logo text styling */
-.navbar-brand {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #667eea !important
-}
-
-/* Navigation links styling */
 .nav-link {
     color: #555 !important;
-    font-weight: 500
+    font-weight: 500;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
 }
 
-/* Navigation link hover and active states */
 .nav-link:hover,
 .nav-link.active {
-    color: #667eea !important
+    color: #667eea !important;
 }
 
-/* Dropdown menu styling */
-.dropdown-menu {
-    border: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    border-radius: 8px
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f2ff;
+    color: #667eea;
+    padding-left: 2rem;
 }
 
 /* ==========================================
