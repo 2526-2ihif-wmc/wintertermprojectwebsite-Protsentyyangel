@@ -20,7 +20,7 @@ html {
 
 /* Navbar container styling */
 .nav-link {
-    color: #555 !important;
+    color: #555;
     font-weight: 500;
     margin-left: 0.5rem;
     transition: color 0.3s ease;
@@ -28,7 +28,7 @@ html {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #667eea !important;
+    color: #667eea;
 }
 
 .dropdown-item {
@@ -42,7 +42,6 @@ html {
     color: #667eea;
     padding-left: 2rem;
 }
-
 /* Main page header with gradient background */
 .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);

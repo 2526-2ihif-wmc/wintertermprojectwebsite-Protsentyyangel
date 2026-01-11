@@ -16,28 +16,38 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">🌊 WaveFit</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button"
-                        data-toggle="dropdown">
+                        data-bs-toggle="dropdown">
                         Workouts
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="workoutsDropdown">
-                        <a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a>
-                        <a class="dropdown-item" href="wavefit-running.html">Running</a>
-                        <a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a>
-                        <a class="dropdown-item" href="wavefit-home.html">Home Exercises</a>
-                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="wavefit-calisthenics.html">Calisthenics</a></li>
+                        <li><a class="dropdown-item" href="wavefit-running.html">Running</a></li>
+                        <li><a class="dropdown-item" href="wavefit-gym.html">Gym Workouts</a></li>
+                        <li><a class="dropdown-item" href="wavefit-home.html">Home Exercises</a></li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="about.html">About</a></li>
+                    </ul>
                 </li>
+
             </ul>
         </div>
     </nav>

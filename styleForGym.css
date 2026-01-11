@@ -1,12 +1,9 @@
-/* Gym Page CSS - Modern Fitness Design */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Smooth native scrolling for anchor links (enhanced by JS for offset) */
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +17,7 @@ body {
 
 /* Navigation Bar */
 .nav-link {
-    color: #555 !important;
+    color: #555;
     font-weight: 500;
     margin-left: 0.5rem;
     transition: color 0.3s ease;
@@ -28,7 +25,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #667eea !important;
+    color: #667eea;
 }
 
 .dropdown-item {
@@ -43,7 +40,6 @@ body {
     padding-left: 2rem;
 }
 
-/* Page Header */
 .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     color: white;
@@ -109,15 +105,10 @@ body {
     z-index: 1;
 }
 
-/* Main Container */
 .container-fluid {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-.row {
-    margin: 0;
 }
 
 /* Sidebar */
@@ -133,7 +124,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-top: 4px solid;
-    border-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%) 1;
+    border-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
 }
 
 .sidebar-title {
@@ -150,7 +141,7 @@ body {
 }
 
 .sidebar-nav .nav-link {
-    color: #555 !important;
+    color: #555;
     padding: 0.75rem 0;
     border-left: 3px solid transparent;
     padding-left: 1rem;
@@ -161,7 +152,7 @@ body {
 
 .sidebar-nav .nav-link:hover,
 .sidebar-nav .nav-link:focus {
-    color: #667eea !important;
+    color: #667eea;
     border-left-color: #667eea;
     padding-left: 1.5rem;
 }
@@ -180,46 +171,10 @@ body {
     overflow: hidden;
 }
 
-.section-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-}
-
-.section-card:hover::before {
-    left: 100%;
-}
-
 .section-card:hover {
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
     transform: translateY(-5px) scale(1.01);
     border-left-color: #764ba2;
-}
-
-/* Interactive list expand/collapse */
-.expand-toggle {
-    margin-left: 8px;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    font-weight: 700;
-    color: #667eea;
-}
-
-.more {
-    display: none;
-    margin-top: 0.4rem;
-    color: #444;
-    padding-left: 8px
-}
-
-.more.show {
-    display: block
 }
 
 #backToTop {
@@ -233,27 +188,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
     z-index: 1000;
-}
-
-/* CSS fallback to show data-more text (hover to reveal) */
-.section-card ul li::after,
-.step-list li::after {
-    content: attr(data-more);
-    display: block;
-    color: #444;
-    margin-top: 0.4rem;
-    padding-left: 8px;
-    font-size: 0.95rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
-}
-
-.section-card ul li:hover::after,
-.step-list li:hover::after,
-.section-card ul li:focus-within::after,
-.step-list li:focus-within::after {
-    max-height: 200px;
 }
 
 .section-header {
@@ -276,23 +210,6 @@ body {
     flex: 1;
 }
 
-.section-header::before {
-    content: '';
-    position: absolute;
-    top: -2.5rem;
-    left: 0;
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-    border-radius: 2px;
-}
-
-/* Alternating section backgrounds */
-.section-card:nth-child(even) {
-    background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
-}
-
-/* List styling */
 .section-card ul {
     list-style: none;
     padding: 0;
@@ -320,22 +237,13 @@ body {
     color: #667eea;
 }
 
-/* Table polish */
 .table {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     margin-bottom: 0;
     border-radius: 8px;
     overflow: hidden;
     border: 2px solid #f0f2ff;
-}
-
-.table-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    color: white !important;
-}
-
-.table-primary th {
-    padding: 1.2rem;
-    color: white !important;
 }
 
 .section-image {
@@ -383,7 +291,7 @@ body {
 }
 
 .sidebar-nav .nav-link {
-    color: #555 !important;
+    color: #555;
     padding: 0.75rem 0;
     border-left: 3px solid transparent;
     padding-left: 1rem;
@@ -392,19 +300,16 @@ body {
     font-weight: 500;
 }
 
-.sidebar-nav .nav-link:hover,
-.sidebar-nav .nav-link:focus {
-    color: #667eea !important;
+.sidebar-nav .nav-link:hover {
+    color: #667eea;
     border-left-color: #667eea;
     padding-left: 1.5rem;
 }
 
-/* Content Area */
 .content-wrapper {
     padding: 0 1rem;
 }
 
-/* Section Cards */
 .section-card {
     background: white;
     border-radius: 12px;
@@ -450,15 +355,15 @@ body {
     font-weight: 500;
 }
 
-/* Benefits Grid */
 .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .benefit-item {
+    flex: 1 1 280px;
     background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
     padding: 1.5rem;
     border-radius: 12px;
@@ -480,35 +385,14 @@ body {
     font-size: 1.1rem;
 }
 
-.benefit-item ul {
-    list-style: none;
-    padding: 0;
-}
-
-.benefit-item li {
-    padding: 0.5rem 0;
-    color: #555;
-}
-
-.benefit-item li:before {
-    content: "→ ";
-    color: #667eea;
-    font-weight: bold;
-    margin-right: 0.5rem;
-}
-
-/* Tables */
 .table {
+    background-color: #667eea;
+    color: white;
     margin-bottom: 0;
 }
 
-.table-primary {
-    background-color: #667eea !important;
-    color: white !important;
-}
-
-.table-primary th {
-    border-color: #667eea !important;
+.table th {
+    border-color: #667eea;
     font-weight: bold;
     padding: 1rem;
 }
@@ -532,9 +416,14 @@ body {
     border-radius: 8px;
     overflow: hidden;
 }
-
-/* Running Types Grid */
 .running-types-grid {
+    margin-top: 2rem;
+}
+
+.running-types-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -543,9 +432,11 @@ body {
     padding: 1.5rem;
     border-radius: 12px;
     border: 2px solid #e0e6ff;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+
+    width: calc(50% - 0.75rem);
+    box-sizing: border-box;
 }
 
 .type-card:hover {
@@ -573,13 +464,13 @@ body {
 .type-card ul {
     list-style-position: inside;
     color: #666;
+    padding-left: 0;
 }
 
 .type-card li {
     margin-bottom: 0.5rem;
 }
 
-/* Form Checklist */
 .form-checklist {
     margin-top: 1.5rem;
 }
@@ -854,7 +745,7 @@ body {
 
 /* Utility Classes */
 .text-primary {
-    color: #667eea !important;
+    color: #667eea;
 }
 
 .bg-light-gradient {
