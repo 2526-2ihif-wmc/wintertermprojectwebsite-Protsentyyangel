@@ -1,11 +1,9 @@
-/* Reset all elements and set box-sizing */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0
 }
 
-/* Body - Font and background gradient */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e9eefc 0%, #d6dcff 100%);
@@ -13,12 +11,10 @@ body {
     line-height: 1.6;
 }
 
-/* Smooth scrolling behavior for anchor links */
 html {
     scroll-behavior: smooth;
 }
 
-/* Navbar container styling */
 .nav-link {
     color: #555;
     font-weight: 500;
@@ -42,7 +38,7 @@ html {
     color: #667eea;
     padding-left: 2rem;
 }
-/* Main page header with gradient background */
+
 .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     color: #fff;
@@ -54,7 +50,6 @@ html {
     overflow: hidden;
 }
 
-/* Header decorative floating circle (top right) */
 .page-header::before {
     content: '';
     position: absolute;
@@ -67,7 +62,6 @@ html {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Header decorative floating circle (bottom left) */
 .page-header::after {
     content: '';
     position: absolute;
@@ -80,7 +74,6 @@ html {
     animation: float 8s ease-in-out infinite reverse;
 }
 
-/* Floating animation for decorative elements */
 @keyframes float {
 
     0%,
@@ -108,7 +101,6 @@ html {
     z-index: 1;
 }
 
-/* Container with max width and padding */
 .container-fluid {
     max-width: 1400px;
     margin: 0 auto;
@@ -117,19 +109,21 @@ html {
 .sidebar-column {
     padding: 1rem;
 }
-/* Sticky sidebar with shadow */
+
 .sidebar-sticky {
     position: sticky;
     top: 80px;
+
     background: #fff;
     padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid;
-    border-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+
+    box-shadow:
+        0 24px 48px rgba(0, 0, 0, 0.12),
+        0 12px 24px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(0, 0, 0, 0.03);
 }
 
-/* Sidebar section title styling */
 .sidebar-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -139,7 +133,6 @@ html {
     border-bottom: 2px solid #667eea;
 }
 
-/* Sidebar navigation links */
 .sidebar-nav .nav-link {
     color: #555;
     padding: 0.75rem 0;
@@ -150,14 +143,12 @@ html {
     font-weight: 500
 }
 
-/* Sidebar link hover state */
 .sidebar-nav .nav-link:hover {
     color: #667eea;
     border-left-color: #667eea;
     padding-left: 1.5rem
 }
 
-/* Section card styling with gradient and shadow */
 .section-card {
     background: #fbfbff;
     border-radius: 16px;
@@ -177,14 +168,12 @@ html {
     border-left-color: #764ba2;
 }
 
-/* Section header heading */
 .section-header h2 {
     color: #667eea;
     font-size: 1.6rem;
     margin-bottom: 1rem
 }
 
-/* Grid for benefits, types, mistakes, nutrition */
 .benefits-grid,
 .type-grid,
 .mistakes-grid {
@@ -194,7 +183,6 @@ html {
     margin-top: 1rem
 }
 
-/* Individual grid item card styling */
 .benefit-item,
 .type-card,
 .mistake-card {
@@ -204,19 +192,16 @@ html {
     border-left: 4px solid #667eea
 }
 
-/* Grid card headings */
 .benefit-item h4,
 .type-card h4 {
     color: #667eea
 }
 
-/* Table header styling with gradient */
-.table-primary {
+.table {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff
 }
 
-/* Table spacing */
 table.table {
     margin-top: 1rem
 }
@@ -243,110 +228,11 @@ table.table {
     transform: scale(1.1);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .page-header {
-        padding: 40px 20px
-    }
-
-    .sidebar-sticky {
-        position: relative;
-        top: auto;
-        margin-bottom: 1.5rem
-    }
-
-    .section-card {
-        padding: 1.25rem
-    }
-
-    .benefits-grid,
-    .type-grid,
-    .mistakes-grid {
-        grid-template-columns: 1fr
-    }
-}
-
-@media (max-width: 576px) {
-    .page-header h1 {
-        font-size: 1.5rem
-    }
-
-    .page-header {
-        padding: 3rem 1rem
-    }
-
-    .section-card {
-        padding: 1.5rem
-    }
-
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start
-    }
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(8px)
-    }
-
-    to {
-        opacity: 1;
-        transform: none
-    }
-}
-
-
-/* hero image with text on homepage */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200');
     background-size: cover;
     height: 400px;
     position: relative;
-}
-
-/* Interactive list expand/collapse */
-.expand-toggle {
-    margin-left: 8px;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    font-weight: 700;
-    color: #667eea;
-}
-
-.more {
-    display: none;
-    margin-top: 0.4rem;
-    color: #444;
-    padding-left: 8px
-}
-
-.more.show {
-    display: block
-}
-
-/* CSS fallback to show data-more text (hover to reveal) */
-.section-card ul li::after,
-.step-list li::after {
-    content: attr(data-more);
-    display: block;
-    color: #444;
-    margin-top: 0.4rem;
-    padding-left: 8px;
-    font-size: 0.95rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
-}
-
-.section-card ul li:hover::after,
-.step-list li:hover::after,
-.section-card ul li:focus-within::after,
-.step-list li:focus-within::after {
-    max-height: 200px;
 }
 
 #backToTop {
@@ -384,7 +270,6 @@ table.table {
     margin: 10px 0 0 0;
 }
 
-/* page title */
 .page-title {
     text-align: center;
     margin: 50px 0;
