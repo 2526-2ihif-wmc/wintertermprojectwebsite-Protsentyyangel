@@ -314,7 +314,6 @@ table tbody tr:hover {
     margin-bottom: 1rem;
 }
 
-/* Heading Wrapper for YouTube Icon */
 .heading-wrapper {
     display: flex;
     align-items: center;
@@ -348,27 +347,6 @@ table tbody tr:hover {
     transform: scale(1.1);
 }
 
-/* Interactive list expand/collapse */
-.expand-toggle {
-    margin-left: 8px;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    font-weight: 700;
-    color: #667eea;
-}
-
-.more {
-    display: none;
-    margin-top: 0.4rem;
-    color: #444;
-    padding-left: 8px
-}
-
-.more.show {
-    display: block
-}
-
 #backToTop {
     position: fixed;
     bottom: 20px;
@@ -398,72 +376,5 @@ table tbody tr:hover {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .page-header {
-        padding: 50px 20px;
-    }
-
-    .page-header h1 {
-        font-size: 2rem;
-    }
-
-    .sidebar-sticky {
-        position: relative;
-        top: auto;
-        margin-bottom: 2rem;
-    }
-
-    /* Grid media query removed - grids not used in calisthenics page */
-
-    .prevention-tips {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-card,
-    .move-card {
-        padding: 1.5rem;
-    }
-
-    .section-header h2,
-    .move-card h2 {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .page-header h1 {
-        font-size: 1.5rem;
-    }
-
-    .page-header p {
-        font-size: 1rem;
-    }
-
-    .sidebar-title {
-        font-size: 1.1rem;
-    }
-
-    .prevention-tips {
-        grid-template-columns: 1fr;
-    }
-
-    .section-card,
-    .move-card {
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    table {
-        font-size: 0.9rem;
-    }
-
-    table thead th,
-    table tbody td {
-        padding: 0.5rem;
     }
 }
