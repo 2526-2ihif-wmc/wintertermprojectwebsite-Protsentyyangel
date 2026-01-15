@@ -40,7 +40,6 @@ body {
     padding-left: 2rem;
 }
 
-/* Page Header */
 .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     color: white;
@@ -148,19 +147,16 @@ body {
     font-weight: 500;
 }
 
-.sidebar-nav .nav-link:hover,
-.sidebar-nav .nav-link:focus {
+.sidebar-nav .nav-link:hover {
     color: #667eea;
     border-left-color: #667eea;
     padding-left: 1.5rem;
 }
 
-/* Content Wrapper */
 .content-wrapper {
     padding: 20px;
 }
 
-/* Section Cards */
 .section-card,
 .move-card {
     background: #fbfbff;
@@ -258,6 +254,11 @@ table tbody tr:hover {
 
 .step-list li strong {
     color: #667eea;
+}
+
+.step-list li:hover {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    transform: translateX(5px);
 }
 
 /* Checklist Items */
